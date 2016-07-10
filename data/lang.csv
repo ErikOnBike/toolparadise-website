@@ -165,15 +165,36 @@
 	<p>
 		Tekeningen en diagrammen gemaakt met een tekenpakket zien er al snel (te) netjes uit.
 		Soms is dat onwenselijk. Dan is Sketchify de tool om zo'n tekening weer tot een schets te maken.
+		(Klik op de Sketchify tekening hieronder om Sketchify te starten of gebruik de knop onderaan)
 	</p>
 ","
 	<p>
 		Drawings and diagrams created with a drawing tool look (too) neat with little effort.
 		Sometimes this is not what you want. In such cases Sketchify is the tool to turn such a drawing
-		into a sketch again.
+		into a sketch again. (Click on the Sketchify drawing below to start Sketchify or use the button
+		at the bottom)
 	</p>
 "
-"try-sketchify","Ga naar Sketchify en probeer het zelf","Go to Sketchify and try it yourself"
+"sketchify-example","
+	<p>
+		Een voorbeeld: Links het origineel, rechts twee sketchified varianten:
+	</p>
+	<div class=""center"">
+		<img src=""sample.svg"" alt=""Origineel"" title=""Origineel"" width=""20%"">
+		<img src=""sample1.svg"" alt=""Sketchified (profiel: fineliner)"" title=""Sketchified (profiel: fineliner)"" width=""20%"">
+		<img src=""sample2.svg"" alt=""Sketchified (profiel: edding 500)"" title=""Sketchified (profiel: edding 500)"" width=""20%"">
+	</div>
+","
+	<p>
+		An example: On the left the original, to the right two sketchified drawings:
+	</p>
+	<div class=""center"">
+		<img src=""sample.svg"" alt=""Origineel"" title=""Origineel"" width=""20%"">
+		<img src=""sample1.svg"" alt=""Sketchified (profiel: fineliner)"" title=""Sketchified (profiel: fineliner)"" width=""20%"">
+		<img src=""sample2.svg"" alt=""Sketchified (profiel: edding 500)"" title=""Sketchified (profiel: edding 500)"" width=""20%"">
+	</div>
+"
+"try-sketchify","Ga naar Sketchify en probeer het zelf!","Go to Sketchify and try it yourself!"
 "privacy-statement","
 	<h3>LET OP! Nog geen SSL</h3>
 	<p>

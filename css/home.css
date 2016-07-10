@@ -81,8 +81,8 @@ h1 {
 }
 
 #sketchify-container {
-	padding-left: 4vw;
-	padding-right: 4vw;
+	padding-left: 20vw;
+	padding-right: 20vw;
 }
 
 #sketchify svg {
@@ -91,9 +91,12 @@ h1 {
 	top: 0px;
 }
 
+.indent {
+	margin-left: 2vw;
+}
+
 #go-sketchify {
 	margin-top: 0.2vw;
-	margin-left: 2vw;
 }
 
 .extra-space {
