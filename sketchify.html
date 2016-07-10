@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/dialogs.css">
+	<link rel="stylesheet" href="css/tooltips.css">
+	<link rel="stylesheet" href="css/sketchify.css">
+	<script src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="xlmkkvj27i0501d"></script>
+	<script src="js/d3.v3.min.js"></script>
+	<script src="js/tp.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/signin.js"></script>
+	<script src="js/sketchify.js"></script>
+	<title>Sketchify</title>
+</head>
+<body>
+	<div id="screen">
+		<form id="global"></form>
+		<span class="help" data-tooltip="#help" data-tooltip-position="right"><i class="material-icons">help</i></span>
+		<div class="sign-post"></div>
+		<div id="help" class="hidden">
+			<div class="menu-close"><button class="icon small" data-icon="close"></button></div>
+			<div class="header">
+				<span class="title" data-text="#help-menu-title"></span>
+				<span class="menu-main help-menu" data-text="#help-menu-main"></span>|<span
+					class="menu-settings help-menu" data-text="#help-menu-settings"></span>|<span
+					class="menu-guide help-menu" data-text="#help-menu-guide"></span><!--|<span
+					class="menu-feedback help-menu" data-text="#help-menu-feedback"></span>-->|<span
+					class="menu-about help-menu" data-text="#help-menu-about"></span>
+			</div>
+			<div class="content" data-html="#help-content-main"></div>
+			<div class="fader"></div>
+		</div>
+		<div class="slide-pane" data-position="right" data-icon="home" data-icon-tooltip="#pane-home">
+			<div class="group divider">
+				<div>
+					<label class="button"><span data-tooltip="#upload-image" data-tooltip-position="left"><button id="upload-button" class="icon normal" data-icon="file_upload"></button> <span class="label" data-text="#upload-text"></span></span></label>
+				</div>
+				<div class="spacer">
+					<label class="button"><span data-tooltip="#download-image" data-tooltip-position="left"><button id="download-button" class="icon normal" data-icon="file_download"></button> <span class="label" data-text="#download-text"></span></span></label>
+				</div>
+			</div>
+			<div class="group divider">
+				<div>
+					<span class="label" data-text="#profiles"></span>
+				</div>
+				<div>
+					<select id="profile" class="profile" data-width="100%" title="Choose type..." data-selected-index="1">
+					</select>
+				</div>
+				<div>
+					<label class="button"><button class="icon normal apply" data-icon="brush"></button> <span class="label" data-text="#apply"></span></label>
+				</div>
+				<div class="spacer">
+					<label class="button"><button id="save-profile-button" class="icon normal" data-icon="save"></button> <span class="label" data-text="#save-profile"></span></label>
+				</div>
+			</div>
+			<div class="group divider">
+				<label class="button"><button id="reset-button" class="icon normal" data-icon="undo"></button> <span class="label" data-text="#reset"></span></label>
+			</div>
+			<div class="group">
+				<div>
+					<label class="button"><button id="user-settings-button" class="icon normal" data-icon="settings"></button> <span class="label" data-text="#user-settings"></span></label>
+				</div>
+				<div class="spacer">
+					<label class="button"><button id="sign-out-button" class="icon normal" data-icon="exit_to_app"></button> <span class="label" data-text="#sign-out"></span></label>
+				</div>
+			</div>
+			<div class="bottom bottom-feedback">
+				<a href="feedback.html"><span data-text="#feedback"></span></a>
+			</div>
+		</div>
+		<div class="slide-pane" data-position="right" data-icon="gesture" data-icon-tooltip="#pane-draw">
+			<div class="group divider">
+				<div>
+					<input name="draw-thickness" class="custom with-distribution" type="range" data-type="slider" min="0" max="100" step="5" value="" data-width="100%" data-tooltip="#draw-thickness" data-tooltip-position="left" form="global"><span class="distribution" data-tooltip="#distribution" data-tooltip-position="left"><button class="icon small" data-input-name="draw-thickness" data-icon="equalizer"></button></span>
+					<input type="hidden" name="draw-thickness-distribution" value="uniform">
+				</div>
+				<div>
+					<span class="with-distribution"><span class="left-label" data-text="#draw-thin"></span> <span class="right-label" data-text="#draw-thick"></span></span>
+				</div>
+				<div class="spacer">
+					<input name="draw-randomness" class="custom with-distribution" type="range" data-type="slider" min="0" max="100" step="5" value="" data-width="100%" data-tooltip="#draw-randomness" data-tooltip-position="left" form="global"><span class="distribution" data-tooltip="#distribution" data-tooltip-position="left"><button class="icon small" data-input-name="draw-randomness" data-icon="equalizer"></button></span>
+					<input type="hidden" name="draw-randomness-distribution" value="uniform">
+				</div>
+				<div>
+					<span class="with-distribution"><span class="left-label" data-text="#draw-few"></span> <span class="right-label" data-text="#draw-much"></span></span>
+				</div>
+			</div>
+			<div class="group">
+				<label class="button"><button class="icon normal apply" data-icon="brush"></button> <span class="label" data-text="#apply"></span></label>
+			</div>
+			<div class="preview-block">
+				<span class="label" data-text="#preview"></span>
+				<div class="preview" data-tooltip="#preview-long" data-tooltip-position="left">
+					<svg width="100%" height="100%">
+						<use xlink:href="#preview-svg"></use>
+					</svg>
+					<span class="preview" data-tooltip="#refresh" data-tooltip-position="left"><button class="icon normal refresh" data-icon="refresh"></button></span>
+				</div>
+			</div>
+		</div>
+		<div class="slide-pane" data-position="right" data-icon="format_paint" data-icon-tooltip="#pane-fill">
+			<div class="group divider">
+				<div>
+					<input name="fill-thickness" class="custom with-distribution" type="range" data-type="slider" min="0" max="100" step="5" value="" data-width="100%" data-tooltip="#fill-thickness" data-tooltip-position="left" form="global"><span class="distribution" data-tooltip="#distribution" data-tooltip-position="left"><button class="icon small" data-input-name="fill-thickness" data-icon="equalizer"></button></span>
+					<input type="hidden" name="fill-thickness-distribution" value="uniform">
+				</div>
+				<div>
+					<span class="with-distribution"><span class="left-label" data-text="#fill-thin"></span> <span class="right-label" data-text="#fill-thick"></span></span>
+				</div>
+				<div class="spacer">
+					<input name="fill-accuracy" class="custom with-distribution" type="range" data-type="slider" min="0" max="100" step="5" value="" data-width="100%" data-tooltip="#fill-accuracy" data-tooltip-position="left" form="global"><span class="distribution" data-tooltip="#distribution" data-tooltip-position="left"><button class="icon small" data-input-name="fill-accuracy" data-icon="equalizer"></button></span>
+					<input type="hidden" name="fill-accuracy-distribution" value="uniform">
+				</div>
+				<div>
+					<span class="with-distribution"><span class="left-label" data-text="#fill-fine"></span> <span class="right-label" data-text="#fill-coarse"></span></span>
+				</div>
+				<div class="spacer">
+					<input name="fill-distance" class="custom with-distribution" type="range" data-type="slider" min="0" max="100" step="5" value="" data-width="100%" data-tooltip="#fill-distance" data-tooltip-position="left" form="global"><span class="distribution" data-tooltip="#distribution" data-tooltip-position="left"><button class="icon small" data-input-name="fill-distance" data-icon="equalizer"></button></span>
+					<input type="hidden" name="fill-distance-distribution" value="uniform">
+				</div>
+				<div>
+					<span class="with-distribution"><span class="left-label" data-text="#fill-distance-fine"></span> <span class="right-label" data-text="#fill-distance-coarse"></span></span>
+				</div>
+				<div>
+					<input name="fill-angle" class="custom with-distribution" type="range" data-type="angle" min="0" max="180" step="1" value="" data-tooltip="#fill-degrees" data-tooltip-position="top" form="global"><span class="distribution" data-tooltip="#distribution" data-tooltip-position="left"><button class="icon small" data-input-name="fill-angle" data-icon="equalizer"></button></span>
+					<input type="hidden" name="fill-angle-distribution" value="uniform">
+				</div>
+				<div>
+					<span class="with-distribution"><span class="label" data-text="#fill-angle"></span></span>
+				</div>
+			</div>
+			<div class="group">
+				<label class="button"><button class="icon normal apply" data-icon="brush"></button> <span class="label" data-text="#apply"></span></label>
+			</div>
+			<div class="preview-block">
+				<span class="label" data-text="#preview"></span>
+				<div class="preview" data-tooltip="#preview-long" data-tooltip-position="left">
+					<svg width="100%" height="100%">
+						<use xlink:href="#preview-svg"></use>
+					</svg>
+					<span class="preview" data-tooltip="#refresh" data-tooltip-position="left"><button class="icon normal refresh" data-icon="refresh"></button></span>
+				</div>
+			</div>
+		</div>
+		<div class="slide-pane" data-position="right" data-icon="palette" data-icon-tooltip="#pane-color">
+			<div class="group divider">
+				<div>
+					<input name="draw-opacity" class="custom with-distribution" type="range" data-type="slider" min="0" max="100" step="5" value="" data-width="100%" data-tooltip="#draw-opacity" data-tooltip-position="left" form="global"><span class="distribution" data-tooltip="#distribution" data-tooltip-position="left"><button class="icon small" data-input-name="draw-opacity" data-icon="equalizer"></button></span>
+					<input type="hidden" name="draw-opacity-distribution" value="uniform">
+				</div>
+				<div>
+					<span class="with-distribution"><span class="left-label" data-text="#draw-opacity-low"></span> <span class="right-label" data-text="#draw-opacity-high"></span></span>
+				</div>
+				<div>
+					<input class="custom direct" type="checkbox" name="color-opacity-options" value="ignore-draw-opacity" data-text="#color-options-ignore-draw-opacity" form="global">
+				</div>
+			</div>
+			<div class="group divider">
+				<div>
+					<input name="fill-opacity" class="custom with-distribution" type="range" data-type="slider" min="0" max="100" step="5" value="" data-width="100%" data-tooltip="#fill-opacity" data-tooltip-position="left" form="global"><span class="distribution" data-tooltip="#distribution" data-tooltip-position="left"><button class="icon small" data-input-name="fill-opacity" data-icon="equalizer"></button></span>
+					<input type="hidden" name="fill-opacity-distribution" value="uniform">
+				</div>
+				<div>
+					<span class="with-distribution"><span class="left-label" data-text="#fill-opacity-low"></span> <span class="right-label" data-text="#fill-opacity-high"></span></span>
+				</div>
+				<div>
+					<input class="custom direct" type="checkbox" name="color-opacity-options" value="ignore-fill-opacity" data-text="#color-options-ignore-fill-opacity" form="global">
+				</div>
+			</div>
+			<div class="group divider">
+				<input class="custom direct" type="checkbox" name="color-opacity-options" value="ignore-transparent-layers" data-text="#color-options-ignore-transparent-layers" form="global">
+			</div>
+			<div class="group">
+				<label class="button"><button class="icon normal apply" data-icon="brush"></button> <span class="label" data-text="#apply"></span></label>
+			</div>
+			<div class="preview-block">
+				<span class="label" data-text="#preview"></span>
+				<div class="preview" data-tooltip="#preview-long" data-tooltip-position="left">
+					<svg width="100%" height="100%">
+						<use xlink:href="#preview-svg"></use>
+					</svg>
+					<span class="preview" data-tooltip="#refresh" data-tooltip-position="left"><button class="icon normal refresh" data-icon="refresh"></button></span>
+				</div>
+			</div>
+		</div>
+		<div class="slide-pane" data-position="right" data-icon="format_size" data-icon-tooltip="#pane-fonts">
+			<div class="group divider">
+				<div>
+					<input name="font-size" class="tick-50 custom with-distribution" type="range" data-type="slider" min="-100" max="100" step="10" value="" data-width="100%" data-tooltip="#font-size" data-tooltip-position="left" form="global"><span class="distribution" data-tooltip="#distribution" data-tooltip-position="left"><button class="icon small" data-input-name="font-size" data-icon="equalizer"></button></span>
+					<input type="hidden" name="font-size-distribution" value="uniform">
+				</div>
+				<div>
+					<span class="with-distribution"><span class="left-label" data-text="#font-size-shrink"></span> <span class="right-label" data-text="#font-size-enlarge"></span></span>
+				</div>
+			</div>
+			<div class="group">
+				<label class="button"><button class="icon normal apply" data-icon="brush"></button> <span class="label" data-text="#apply"></span></label>
+			</div>
+			<div class="group">
+				<span data-text="#fonts-under-construction"></span>
+			</div>
+		</div>
+		<div class="slide-pane" data-position="right" data-icon="settings" data-icon-tooltip="#pane-settings">
+			<div class="group divider">
+				<div class="checkbox-group text-unselectable">
+					<input type="checkbox" name="options-tooltips" value="hide" data-text="#options-hide-tooltips" form="global">
+					<input type="checkbox" name="options-preview" value="hide" data-text="#options-hide-preview" form="global">
+					<input type="checkbox" name="options-advanced" value="yes" checked data-text="#options-advanced" form="global">
+				</div>
+			</div>
+			<div class="group">
+				<label class="button"><button id="save-options-button" class="icon normal" data-icon="save"></button> <span class="label" data-text="#save-options"></span></label>
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<div id="image"><svg width="1000" height="800"><g></g></svg></div>
+	</div>
+	<div id="preview" class="hidden">
+		<svg id="preview-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 400 400"><g><path d="M30 30C130 30 130 30 230 30 230 140 230 140 230 250 130 250 130 250 30 250 30 140 30 140 30 30" style="stroke:#0000ff;stroke-width:1px;fill:#0000ff"/><path d="M200 75C269.03559 75 325 130.96440 325 200 325 269.03559 269.03559 325 200 325 130.96440 325 75 269.03559 75 200 75 130.96440 130.96440 75 200 75" style="stroke:#ff0000;stroke-width:5px;fill:#ff0000;fill-opacity:0.5"/><path d="M50 340C150 340 150 340 250 340 200 250 200 250 150 160 100 250 100 250 50 340" style="stroke:#00ff00;stroke-width:1px;fill:#00ff00"/><path d="M50 370C200 370 200 370 350 370 350 210 350 210 350 50M340 70C345 60 345 60 350 50 355 60 355 60 360 70" style="stroke:#000000;stroke-width:1px;fill:none"/></g></svg>
+	</div>
+</body>
+</html>

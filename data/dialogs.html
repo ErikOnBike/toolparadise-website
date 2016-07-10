@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div id="messageDialog" class="message dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">info</i></span> <span class="content"></span>
+		</div>
+	</div>
+	<div id="ignorableMessageDialog" class="message ignorable dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">info</i></span> <span class="content"></span>
+		</div>
+		<div class="center">
+			<input type="checkbox" name="" value="" data-text="#message-ignore" form="">
+		</div>
+	</div>
+	<div id="errorDialog" class="message error dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">error</i></span> <span class="content"></span>
+		</div>
+	</div>
+	<div id="confirmDialog" class="confirm dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">help</i></span> <span class="content"></span>
+		</div>
+	</div>
+	<div id="selectDialog" class="select dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">help</i></span> <span class="content"></span>
+			<form id="choice-form">
+				<div class="radiobutton-group">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="inputDialog" class="input dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">help</i></span> <span class="content"></span>
+			<form id="sign-in-form">
+				<div>
+					<input type="text" name="input" autocomplete="off">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="signInAndUpDialog" class="sign-in sign-up dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">verified_user</i></span> <span class="content"></span>
+			<form id="sign-in-form">
+				<div class="sign-in-line">
+					<span class="label" data-text="#email"></span> <input type="email" name="email">
+				</div>
+				<div class="radiobutton-group">
+					<input type="radiobutton" name="operation" value="sign-in" checked data-text="#sign-in">
+					<input type="radiobutton" name="operation" value="sign-up" data-text="#sign-up">
+				</div>
+				<div class="sign-in-line password">
+					<span class="label" data-text="#password"></span> <input type="password" name="password"> <span data-tooltip="#account-forgot-password" data-tooltip-position="right"><button id="forgot-password-button" class="icon normal" tabindex="-1" data-icon="help"></button></span>
+				</div>
+				<div class="sign-in-line password-verify hidden">
+					<span class="label" data-text="#password-verify"></span> <input type="password" name="password-verify">
+				</div>
+				<div class="checkbox-group persist-sign-in">
+					<input type="checkbox" name="persist-sign-in" value="remember-me" data-text="#persist-sign-in">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="changePasswordDialog" class="change-password dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">verified_user</i></span> <span class="content"></span>
+			<form id="change-password-form">
+				<div class="sign-in-line password-old hidden">
+					<span class="label" data-text="#password-old"></span> <input type="password" name="password-old">
+				</div>
+				<div class="sign-in-line password-new">
+					<span class="label" data-text="#password-new"></span> <input type="password" name="password-new">
+				</div>
+				<div class="sign-in-line password-verify">
+					<span class="label" data-text="#password-verify"></span> <input type="password" name="password-verify">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="userSettingsDialog" class="user-settings dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">settings</i></span> <span class="content"></span>
+			<form id="user-settings-form">
+				<span class="label" data-text="#change-language"></span>
+				<div class="radiobutton-group">
+					<input type="radiobutton" name="language" value="nl" checked data-text="#lang-nl">
+					<input type="radiobutton" name="language" value="en" data-text="#lang-en">
+				</div>
+				<span id="change-password-button"><button class="icon normal" data-icon="security"></button> <span class="label" data-text="#change-password"></span></span>
+			</form>
+		</div>
+	</div>
+	<div id="downloadDialog" class="download dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">file_download</i></span> <span class="content"></span>
+			<div class="storage-actions">
+				<span class="label" data-text="#download-location"></span>
+				<div class="spacer">
+					<label class="button"><button id="store-locally-button" class="icon normal" data-icon="file_download"></button> <span class="label" data-text="#download-local"></span></label>
+				</div>
+				<div class="spacer">
+					<label class="button"><button id="store-in-dropbox-button" class="icon normal dropbox" data-icon=""></button><img src="images/dropbox.png">&nbsp;<span class="label" data-text="#download-dropbox"></span></label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="uploadDialog" class="upload dialog">
+		<div class="content">
+			<span class="icon large"><i class="material-icons">file_upload</i></span> <span class="content"></span>
+			<div class="storage-actions">
+				<span class="label" data-text="#upload-location"></span>
+				<div class="spacer">
+					<form name="upload-svg" onsubmit="return false">
+						<label class="file-upload button">
+							<button id="retrieve-locally-button" class="icon normal" data-icon="file_upload"><input id="file-upload" type="file" accept="image/svg+xml"></button> <span class="label" data-text="#upload-local"></span>
+						</label>
+					</form>
+				</div>
+				<div class="spacer">
+					<label class="button"><button id="retrieve-from-dropbox-button" class="icon normal dropbox" data-icon=""></button><img src="images/dropbox.png">&nbsp;<span class="label" data-text="#upload-dropbox"></span></label>
+				</div>
+				<div class="spacer">
+					<label class="button"><button id="retrieve-link-button" class="icon normal" data-icon="link"></button> <span class="label" data-text="#upload-link"></span></label>
+				</div>
+				<div class="spacer">
+					<label class="button"><button id="retrieve-example-button" class="icon normal" data-icon="star"></button> <span class="label" data-text="#upload-example"></span></label>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

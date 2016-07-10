@@ -1,0 +1,865 @@
+*, *:before, *:after
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	background: #000000;
+	color: #ffffff;
+	-webkit-text-size-adjust: 100%;
+}
+
+#screen {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	overflow: hidden;
+}
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(/css/font/MaterialIcons-Regular.eot); /* For IE6-8 */
+	src: local('Material Icons'), local('MaterialIcons-Regular'),
+		url(/css/font/MaterialIcons-Regular.woff2) format('woff2'),
+		url(/css/font/MaterialIcons-Regular.woff) format('woff'),
+		url(/css/font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+i.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	white-space: nowrap;
+	word-wrap: normal;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+i.material-icons.large {
+	font-size: 3vw;
+	vertical-align: bottom;
+}
+
+div.modal {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 200;
+	background-color: rgba(240, 240, 240, 0.85);	/* Single blur layer */
+}
+
+div.modal ~ div.modal {
+	background-color: initial;	/* Prevent additional blur layers */
+}
+
+div.dialog {
+	position: absolute;
+	left: 0vw;
+	top: 0vh;
+	max-width: 80vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-bottom: 2vw;
+	border-width: 0px;
+	border-radius: 3vw;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+}
+
+div.modal:not(:last-child) div.dialog:after {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: -4px;
+	border-radius: 3vw;
+	content: " ";
+	background-color: rgba(240, 240, 240, 0.8);
+}
+
+div.dialog div.header {
+	cursor: move;
+	height: 2vw;
+}
+
+div.dialog.message,
+div.dialog.confirm,
+div.dialog.select,
+div.dialog.input,
+div.dialog.sign-in,
+div.dialog.change-password,
+div.dialog.user-settings,
+div.dialog.download,
+div.dialog.upload {
+	background-color: rgba(204, 204, 204, 0.7);
+}
+
+div.dialog.message.error {
+	background-color: rgba(255, 160, 160, 0.7);
+}
+
+div.dialog.sign-in #sign-in-form span.label, div.dialog.change-password #change-password-form span.label {
+	font-size: 1.5vw;
+	width: 8.5vw;
+	text-align: right;
+}
+
+div.dialog.sign-in div.radiobutton-group, div.dialog.sign-in div.checkbox-group {
+	margin-left: 8.5vw;
+}
+
+div.dialog.user-settings span.label {
+	font-size: 1.5vw;
+}
+
+div.dialog.user-settings div.radiobutton-group {
+	margin-left: 3.5vw;
+}
+
+div.dialog .storage-actions > span.label {
+	margin-bottom: 0.5vw;
+	font-size: 1.5vw;
+}
+
+/* Fix for Firefox's displacement issue of img inside button */
+div.dialog button.dropbox + img {
+	display: inline-block;
+	position: absolute;
+	height: 3vw;
+	margin-left: -3.5vw;
+	margin-top: 0.5vw;
+	pointer-events: none;
+}
+
+#change-password-button {
+	cursor: pointer;
+}
+
+div.dialog .sign-in-line {
+	line-height: 4vw;
+}
+
+div.dialog .sign-in-line input {
+	vertical-align: middle;
+}
+
+div.dialog div.content {
+	padding: 1vw;
+	word-wrap: break-word;
+}
+
+div.dialog div.content span:not(.hidden) {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.dialog .icon.large i.material-icons {
+	font-size: 6vw;
+	width: 6vw;
+}
+
+div.dialog .icon.normal i.material-icons {
+	font-size: 4vw;
+	width: 4vw;
+}
+
+div.dialog .icon.small i.material-icons {
+	font-size: 2vw;
+	width: 2vw;
+}
+
+div.dialog div.content span.content {
+	font-size: 2vw;
+	max-width: 90%;
+	white-space: pre-wrap;
+	word-wrap: break;
+	overflow-wrap: break;
+}
+
+div.dialog div.content div.radiobutton-group i.material-icons {
+	font-size: 2vw;
+	width: 2vw;
+}
+
+div.dialog div.content div.radiobutton-group {
+	width: 26vw;
+	font-size: 1vw;
+}
+
+div.dialog.input input {
+	margin-top: 2vw;
+	width: 100%;
+}
+
+div.slide-pane {
+	position: relative;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	background-color: #cccccc;
+	z-index: 50;
+}
+
+div.slide-pane:not(.active) {
+	display: none;
+}
+
+div.slide-pane[data-position=left] {
+	right: 100vw;
+	top: 0px;
+	height: 100%;
+	margin-right: -2vw;
+}
+
+div.slide-pane[data-position=right] {
+	left: 100vw;
+	top: 0px;
+	height: 100%;
+	margin-left: -2vw;
+}
+
+div.slide-pane[data-position=top] {
+	bottom: 100vh;
+	left: 0px;
+	width: 100%;
+	margin-bottom: -2vh;
+}
+
+div.slide-pane[data-position=bottom] {
+	top: 100vh;
+	left: 0px;
+	width: 100%;
+	margin-top: -2vh;
+}
+
+div.pane-margin {
+	position: absolute;
+	background-color: #cccccc;
+	z-index: 49;
+}
+
+div.pane-margin.left {
+	right: 100vw;
+	top: 0px;
+	height: 100%;
+	width: 2vw;
+	margin-right: -2vw;
+}
+
+div.pane-margin.right {
+	left: 100vw;
+	top: 0px;
+	height: 100%;
+	width: 2vw;
+	margin-left: -2vw;
+}
+
+div.pane-margin.top {
+	bottom: 100vh;
+	left: 0px;
+	width: 100%;
+	height: 2vw;
+	margin-bottom: -2vh;
+}
+
+div.pane-margin.bottom {
+	top: 100vh;
+	left: 0px;
+	width: 100%;
+	height: 2vw;
+	margin-top: -2vh;
+}
+
+div.slider-container {
+	display: inline-block;
+	position: absolute;
+}
+
+div.slider-container.left {
+	width: 6vw;
+	top: 6vh;
+	left: 2vw;
+	height: 100%;
+}
+
+div.slider-container.right {
+	width: 6vw;
+	top: 6vw;
+	left: 98vw;
+	height: 100%;
+}
+
+div.slider-container.top {
+	height: 6vw;
+	top: 2vh;
+	left: 6vw;
+	width: 100%;
+}
+
+div.slider-container.bottom {
+	height: 6vw;
+	top: 98vh;
+	left: 6vw;
+	width: 100%;
+}
+
+div.slider-container div.slider {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 6vw;
+	height: 6vw;
+	background-color: #cccccc;
+	z-index: 150;
+	cursor: pointer;
+}
+
+div.slider-container div.slider.left {
+	border-top-right-radius: 3vw;
+	border-bottom-right-radius: 3vw;
+}
+
+div.slider-container div.slider.right {
+	margin-left: -6vw;
+	border-top-left-radius: 3vw;
+	border-bottom-left-radius: 3vw;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+}
+
+div.slider-container div.slider.top {
+	border-bottom-left-radius: 3vw;
+	border-bottom-right-radius: 3vw;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+}
+
+div.slider-container div.slider.bottom {
+	margin-top: -6vw;
+	border-top-left-radius: 3vw;
+	border-top-right-radius: 3vw;
+}
+
+div.slider-container div.slider.left, div.slider-container div.slider.right {
+	margin-top: 0.25vw;
+	margin-bottom: 0.25vw;
+}
+
+div.slider-container div.slider.top, div.slider-container div.slider.bottom {
+	margin-left: 0.25vw;
+	margin-right: 0.25vw;
+}
+
+div.slider {
+	text-align: center;
+}
+
+div.slider span i.material-icons {
+	font-size: 5vw;
+	width: 5vw;
+	line-height: 6vw;
+	vertical-align: middle;
+}
+
+div.slider.left {
+	margin-right: 0.5vw;
+}
+
+div.slider.right {
+	margin-left: 0.5vw;
+}
+
+div.slider.top {
+	margin-bottom: 0.5vw;
+}
+
+div.slider.bottom {
+	margin-top: 0.5vw;
+}
+
+div.slider.top, div.slider.bottom {
+	float: left;
+}
+
+label.button {
+	cursor:pointer;
+}
+
+button.icon:not(.hidden) {
+	display: inline-block;
+	padding: 0px;
+	border: none;
+	border-radius: 3vw;
+	text-align: center;
+	background-color: rgba(60, 60, 90, 0.95);
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.icon[data-icon]:before {
+	content: attr(data-icon);
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	white-space: nowrap;
+	word-wrap: normal;
+	vertical-align: middle;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+button.icon:not(:active) {
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+}
+
+button.large {
+	height: 6vw;
+	width: 6vw;
+}
+
+button.icon.large[data-icon]:before {
+	font-size: 5vw;
+}
+
+button.normal {
+	height: 4vw;
+	width: 4vw;
+}
+
+button.icon.normal[data-icon]:before {
+	font-size: 3.3vw;
+}
+
+button.small {
+	height: 2vw;
+	width: 2vw;
+}
+
+button.icon.small[data-icon]:before {
+	font-size: 1.7vw;
+}
+
+button:not(.hidden):disabled,
+.icon[data-icon]:disabled:before,
+label.button button:disabled ~ span {
+	color: #e8e8e8;
+	cursor: not-allowed;
+}
+
+button:disabled:not(:active) {
+	box-shadow: none;
+}
+
+button:not(.hidden):disabled,
+.icon[data-icon]:disabled:before {
+	color: #cccccc;
+	background-color: rgba(90, 90, 120, 0.95);
+	border-radius: 3vw;
+}
+
+input {
+	display: inline-block;
+	height: 2.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	border-width: 0px;
+	border-radius: 1.75vw;
+	font-size: 2vw;
+	vertical-align: bottom;
+}
+
+span.select {
+	display: inline-block;
+	position: relative;
+	width: 18vw;
+	height: 2.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	margin-top: 0.75vw;
+	margin-bottom: 0.25vw;
+	border-width: 0px;
+	border-radius: 1.75vw;
+	font-size: 2vw;
+	vertical-align: bottom;
+	cursor: pointer;
+	background-color: #ffffff;
+	color: #101010;
+}
+
+/* Move drop down icon to right */
+span.select span i.material-icons {
+	padding-left: 90%;
+	font-size: 2vw;
+	width: 2vw;
+}
+
+span.select span {
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	white-space: nowrap;
+}
+
+span.select span.option {
+	z-index: 100;
+	width: 81%;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	cursor: pointer;
+	background-color: #ffffff;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+span.select span.option.selected {
+	z-index: 101;
+}
+
+span.slider {
+	display: inline-block;
+	position: relative;
+	width: 14vw;
+	height: 1.5vw;
+	margin-top: 0.75vw;
+	margin-bottom: 0.25vw;
+	vertical-align: bottom;
+	border-radius: 0.75vw;
+	background-color: #ffffff;
+}
+
+span.slider span.tick {
+	display: inline-block;
+	position: absolute;
+	width: 2px;
+	top: -0.5vw;
+	bottom: -0.5vw;
+	border-width: 2px;
+	border-color: #ffffff;
+	border-style: solid;
+	z-index: -1;
+}
+
+span.slider span.dot-overlay {
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	width: 100%;
+}
+
+span.slider span.range {
+	display: inline-block;
+	position: absolute;
+	height: 1.5vw;
+	border-radius: 0.75vw;
+	background-color: #808080;
+}
+
+span.slider span.dot {
+	display: inline-block;
+	position: absolute;
+	top: -0.25vw;
+	left: 0px;
+	margin-bottom: 2.25vw;
+	margin-left: -1vw;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+}
+
+span.angle {
+	display: inline-block;
+	position: relative;
+	width: 8vw;
+	height: 4vw;
+	margin-top: 1vw;
+	margin-bottom: 0.25vw;
+	vertical-align: bottom;
+	border-top-left-radius: 50% 100%;
+	border-top-right-radius: 50% 100%;
+}
+
+span.angle:not(.needle-overlay) {
+	background-color: #ffffff;
+}
+
+span.angle.needle-overlay {
+	position: absolute;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
+span.angle span.needle {
+	display: inline-block;
+	position: absolute;
+	bottom: -4vw;
+	left: 50%;
+	width: 100%;
+	height: 8vw;
+	-webkit-transform-origin: 0% 50%;
+	-moz-transform-origin: 0% 50%;
+	-ms-transform-origin: 0% 50%;
+}
+
+span.angle span.needle:not(:last-child) {
+	background-color: #808080;
+}
+
+span.angle span.needle:last-child {
+	background-color: #ffffff;
+}
+
+span.angle span.needle:not(:first-child):not(:last-child), span.angle span.needle:only-child {
+	margin-bottom: -2px;
+	margin-left: -1px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #ff0000;
+}
+
+span.angle span.center {
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+}
+
+span.angle span.dot-overlay {
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+span.angle span.dot {
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	margin-left: -1vw;
+	margin-bottom: -1vw;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+}
+
+span.dot {
+	width: 2vw;
+	height: 2vw;
+	background-color: #3c3c5a;
+	cursor: pointer;
+}
+
+span.dot:first-child {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 1vw;
+	border-bottom-right-radius: 1vw;
+}
+
+span.dot:last-child {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 1vw;
+	border-bottom-left-radius: 1vw;
+}
+
+span.dot:not(:first-child):not(:last-child), span.dot:only-child {
+	border-radius: 1vw;
+}
+
+span.checkbox, span.radiobutton {
+	display: inline-block;
+	font-size: 1.25vw;
+	margin-top: 0.5vw;
+	margin-bottom: 0.25vw;
+	width: 100%;
+	cursor: pointer;
+}
+
+span.checkbox i.material-icons, span.radiobutton i.material-icons {
+	font-size: 2.5vw;
+	width: 2.5vw;
+	vertical-align: middle;
+}
+
+span.checkbox span, span.radiobutton span {
+	display: inline-block;
+	margin-left: 0.5vw;
+	vertical-align: middle;
+}
+
+div.checkbox-group span.checkbox ~ span.checkbox, .radiobutton-group span.radiobutton ~ span.radiobutton {
+	margin-top: 0px;
+}
+
+span.checkbox span + span, span.radiobutton span + span {
+	width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+span.slider:focus span.dot.focus:not(:only-child):not(.dragging), span.angle:focus span.dot.focus:not(:only-child):not(.dragging) {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #ffffff;
+}
+
+/* Prevent 'glow' on input elements on Safari */
+*:focus {
+	outline: none;
+}
+
+/* Add background color for focus on input elements */
+input:focus, .input:focus, span.slider:focus, span.angle:not(.needle-overlay):focus, span.angle:focus span.needle:last-child, span.select:focus, span.select:focus span.option.selected {
+	background-color: #e0e0ff;
+}
+
+button:focus {
+	color: #e0e0ff;
+}
+
+button:focus:before {
+	color: #c0c0ff;
+}
+
+span.slider:focus .tick {
+	border-color: #e0e0ff;
+}
+
+div.slider-container div.slider.dragging, span.dot.dragging, div.dialog.dragging {
+	background-color: #0000ff;
+}
+
+div.slide-pane.open, div.slide-pane.dragging, div.slider.dragging {
+	z-index: 175;
+}
+
+div.sign-post {
+	position: absolute;
+	display: inline-block;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 1vw;
+	color: #ffffff;
+	background-color: #6bbdff;
+	font-size: 2vw;
+	line-height: 2.5vw;
+	white-space: pre;
+	padding: 1.5vw;
+	margin-top: -1.7vw;
+	margin-left: 3vw;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+	opacity: 0.0;
+	z-index: 199;
+}
+
+div.sign-post:after, div.sign-post:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+div.sign-post:after {
+	border-color: rgba(107, 189, 255, 0);
+	border-left-color: #6bbdff;
+	border-width: 3vw;
+	margin-top: -3vw;
+}
+
+div.sign-post:before {
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 3.259vw;
+	margin-top: -3.259vw;
+}
+
+[data-tooltip]:hover > .sign-post {
+	display: none;
+}
+
+.text-unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.scrollable {
+	overflow: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Prevent large fonts on iPhone */
+@media screen and (max-device-width: 480px) {
+	body {
+		-webkit-text-size-adjust: 100%;
+	}
+}

@@ -1,0 +1,928 @@
+"id","nl","en"
+"help","Klik hier om hulp te krijgen of\nsleep naar element om daar hulp te krijgen","Click here to get help or drag\nto element to receive help there"
+"help-menu-title","Help","Help"
+"help-menu-main","Hoofdmenu","Main"
+"help-menu-settings","Instellingen","Settings"
+"help-menu-guide","Mini-gids","Mini guide"
+"help-menu-feedback","Feedback","Feedback"
+"help-menu-about","Versie","Version"
+"sp-load-svg","Ga naar de home-tab <i class=""material-icons large"">home</i> om een afbeelding in te lezen.\nDe afbeelding dient in het SVG-formaat te zijn.","Go the home tab <i class=""material-icons large"">home</i> to read in a drawing.\nThe drawing must be in the SVG format."
+"sp-load-svg-button","Druk op het importeer-icoon <i class=""material-icons large"">file_upload</i> om de afbeelding\nin te lezen. Een dialoogvenster verschijnt vervolgens\nwaarmee een SVG-bestand geselecteerd kan worden.","Click on <i class=""material-icons large"">file_upload</i> to\nread the drawing."
+"sign-in-first","U moet zich aanmelden om hier gebruik\nvan te kunnen maken. Dit kan betekenen\ndat u zich eerst moet registreren door\neen nieuw account aan te maken.\nRegistreren kan vanaf het aanmeldscherm.","You need to sign in before you can use this.\nThis might mean you will have to sign up for a\nnew account first. Sign up is available on the\nsign in screen."
+"sign-in-or-up","Aanmelden/registreren","Sign in/sign up"
+"sign-in","Aanmelden met bestaand account","Sign in using existing account"
+"sign-in-required","Vanaf deze locatie is aanmelden verplicht.\nGa met hulp van uw browser terug naar de\nvorige locatie als u zich niet wilt aanmelden.","From this location signing in is required.\nPlease use your browser to go back to\nyour previous location if you do not\nwant to sign in."
+"sign-up","Registreren van nieuw account","Sign up for new account"
+"persist-sign-in","Onthoud mij","Remember me"
+"sign-out","Afmelden","Sign out"
+"user-settings","Account-instellingen","Account settings"
+"change-language","Welke taal/Which language","Welke taal/Which language"
+"lang-nl","Nederlands","Nederlands"
+"lang-en","English","English"
+"lang-restart","De getoonde taal wijkt af van de gekozen taal.\nDe pagina zal opnieuw geladen worden.","The chosen language differs from the one shown.\nThe page will be reloaded."
+"change-password","Wijzig wachtwoord","Change password"
+"sign-out-confirm","Niet opgeslagen gegevens gaan\nverloren bij het afmelden.\n\nDoorgaan?","Any unsaved data is lost\nduring sign out.\n\nContinu?"
+"account-forgot-password","Wachtwoord vergeten","Password forgotten"
+"password-reset-confirm","Een e-mail met een link om het wachtwoord\naan te passen wordt verzonden aan onder-\nstaande e-mailadres:\n\n\t%*%\n\nDoorgaan?","An e-mail with a link to reset your password\nwill be sent to the following e-mail address:\n\n\t%*%\n\nContinu?"
+"password-reset-successful","Een e-mail met een link om het wachtwoord\naan te passen is verzonden naar het opge-\ngeven e-mailadres.\n(als een geactiveerd account met het\nopgegeven e-mailadres bestaat)","An e-mail with a link to reset your password\nis sent to the specified e-mail address.\n(if an activated account with the specified\ne-mail address exists)"
+"password-reset-failed","Het is niet gelukt een e-mail te sturen\nmet een link om het wachtwoord te wijzigen.\nDit betekent niet dat het e-mailadres\nonbekend is of niet bestaat.\n(probeer later opnieuw of neem contact\nop met de beheerder)","Failed to send the e-mail with a link to reset\nyour password. This does not mean that\nthe e-mail address is unknown or invalid.\n(try again later or contact the system\nadministrator)"
+"password-change","Geef nieuw wachtwoord op","Enter new password"
+"password-no-change","Uw wachtwoord is niet gewijzigd","Your password is not changed"
+"password-change-failed","Uw wachtwoord kon niet gewijzigd worden\n(probeer later opnieuw of neem contact\nop met de beheerder)","Your password could not be changed\n(try again later or contact the\nsystem administrator)"
+"password-change-successful","Uw wachtwoord is succesvol gewijzigd","Your password is changed successfully"
+"password-reset-change-successful","Uw wachtwoord is succesvol gewijzigd.\nMeld u opnieuw aan met uw nieuwe wachtwoord.","Your password is changed successfully.\nPlease sign in again with your new password."
+"password-reset-email-invalid","Om uw wachtwoord te kunnen herstellen\nmoet u eerst uw e-mailadres invullen.","To reset your password you will have\nto fill in your e-mail address first"
+"email-empty","U heeft geen e-mailadres ingevoerd","You have not entered an e-mail address"
+"email-invalid","U heeft geen correct e-mailadres ingevoerd","You have not entered a valid e-mail address"
+"password-too-short","Wachtwoord moet minimaal\n6 karakters lang zijn","Password should be at least\n6 characters long"
+"passwords-different","Nieuwe en controle wachtwoord niet gelijk","New and verify password not identical"
+"activation-mail-sent","Een e-mail met een link om dit account\nte activeren is verzonden naar het\nopgegeven e-mailadres.\nHet account dient geactiveerd te\nworden voor gebruik.","An e-mail with a link to activate\nthis account has been sent.\nThe account needs to be activated\nbefore being used."
+"account-add-failed","Het account kon niet aangemaakt worden\n(probeer later opnieuw of neem\ncontact op met de beheerder)","The account could not be created\n(try again later or contact the\nsystem administrator)"
+"activate-successful","Het account is succesvol geactiveerd","The account is activated successfully"
+"activate-failed","Het activeren van het account is mislukt.\nMogelijk is de tijdlimiet overschreden.\nProbeer opnieuw te registreren of neem\ncontact op met de beheerder.","The account could not be activated.\nMaybe the time limit has expired.\nTry to register again or contact the\nsystem administrator."
+"session-failure","Fout bij aanmelden","Error during sign-in"
+"session-expired","De sessie is verlopen","The session has expired"
+"session-empty","Er is nog geen afbeelding geïmporteerd","No image is imported yet"
+"email","E-mail","E-mail"
+"password","Wachtwoord","Password"
+"password-old","Huidige","Current"
+"password-new","Nieuwe","New"
+"password-verify","(controle)","(verify)"
+"no-credentials","Voer zowel uw e-mailadres\nals uw wachtwoord in","Please enter both your e-mail\nand password to sign in"
+"wrong-credentials","De combinatie e-mailadres en\nwachtwoord is niet correct","The combination e-mail address\nand password is incorrect"
+"wrong-password","Incorrect huidig wachtwoord","Wrong current password"
+"message-ignore","Toon dit bericht niet meer","Do not show message again"
+"share-linked-in","<img src=""images//linkedin.png""> Deel dit op LinkedIn","<img src=""images//linkedin.png""> Share this on LinkedIn"
+"feedback","Feedback","Feedback"
+"privacy","Privacy","Privacy"
+"terms","Voorwaarden","Terms"
+"distribution","Verdeling","Distribution"
+"distribution-title","Welke verdeling?","Which distribution?"
+"distribution-uniform","Uniform","Uniform"
+"distribution-normalLarge","Normaal met grote deviatie","Normal with large deviation"
+"distribution-normalSmall","Normaal met kleine deviatie","Normal with small deviation"
+"save-profile","Sla profiel op","Save profile"
+"reset","Toon origineel","Show original"
+"apply","Pas toe op tekening","Apply on drawing"
+"refresh","Vernieuw","Refresh"
+"preview","Voorvertoning","Preview"
+"pane-home","Inlezen, opslaan en profielen","Load, save and profiles"
+"upload-image","Upload afbeelding","Upload image"
+"download-image","Download resultaat","Download result"
+"upload-text","Importeer SVG","Import SVG"
+"download-text","Exporteer SVG","Export SVG"
+"download-location","Resultaat op welke locatie opslaan?","Store result at which location?"
+"download-local","Sla afbeelding op in computer","Store image on computer"
+"download-dropbox","Sla afbeelding op in Dropbox","Store image in Dropbox"
+"download-nothing","Nog geen afbeelding geïmporteerd.\nImporteer en bewerk eerst een\nafbeelding.","No image imported yet.\nPlease import and edit an\nimage first."
+"download-success","Afbeelding is geëxporteerd.","Image is exported."
+"download-failed","Afbeelding kon niet geëxporteerd worden.\nFoutmelding:\n","Image could not be exported.\nError message:\n"
+"download-cancelled","Het exporteren is geannuleerd.\nAfbeelding is niet geëxporteerd.","The export is cancelled.\nImage is not exported."
+"upload-location","Afbeelding vanaf welke locatie inlezen?","Retrieve image from which location?"
+"upload-local","Lees afbeelding in vanaf computer","Retrieve image from computer"
+"upload-dropbox","Lees afbeelding in vanuit Dropbox","Retrieve image from Dropbox"
+"upload-link","Gebruik afbeelding vanaf website (URL)","Use image from website (URL)"
+"upload-link-wrong-protocol","URL voor afbeelding moet beginnen met één van\nonderstaande protocollen:\n    http://\n    https://\n    ftp://","URL for image should start with one of\nthe following protocols:\n    http://\n    https://\n    ftp://"
+"upload-example","Gebruik voorbeeldafbeelding","Use example image"
+"upload-too-many","Er kan maar 1 afbeelding per\nkeer gelezen worden.\nAlleen eerste wordt gebruikt.","It is only possible to read\n1 image at a time.\nThe first will be used."
+"upload-not-svg","Te importeren afbeelding is geen SVG-bestand.\nAlleen SVG-bestanden worden ondersteund.\nConverteer afbeelding en probeer opnieuw.","Image to import is not a SVG file.\nOnly SVG files are accepted.\nPlease convert image and try again."
+"upload-failed","Afbeelding kon niet geïmporteerd worden.\nControleer of het bestand wel goed\nleesbaar is in andere programma's.\nAls dat het geval is neem dan alstublieft\ncontact op met de beheerder.","Image could not be imported.\nTest if file is readable in other\napplications. If so please contact\nthe system administrator."
+"upload-failed-resource","Afbeelding kon niet geïmporteerd worden.\nControleer of het bestand wel goed\nbenaderbaar is (via browser bijvoorbeeld).","Image could not be imported.\nTest if file is accessable from another\napplication (like your browser itself)."
+"upload-too-big","Afbeelding kon niet geïmporteerd worden.\nHet bestand is te groot (meer dan 10Mb).","Image could not be imported.\nThe file is too big (more than 10Mb)."
+"upload-cancelled","Het importeren is geannuleerd.","The import is cancelled."
+"upload-missing","Geen afbeelding aanwezig op opgegeven locatie.","No image present at specified location."
+"upload-processed","Het SVG-bestand bevat één of meerdere elementen\ndie niet (volledig) ondersteund worden.","The SVG file contains one or more elements\nwhich are not (fully) supported."
+"upload-processed2","Let op de onderstaande zaken:","Please pay attention to the following:"
+"upload-processed-skippedScript","alle scripts zijn verwijderd","all scripts are removed"
+"upload-processed-containsBehaviouralElements","elementen met gedrag (animaties of verwijzingen) werken mogelijk niet meer","elements with behaviour (animations or links) might not work anymore"
+"upload-processed-unsupportedImageTypes","één of meer afbeeldingen kunnen niet worden gelezen (alleen png, jpg en gif worden ondersteund)","one or more images can not be read (only png, jpg and gif are supported)"
+"upload-processed-skippedStylesheetLinks","externe stylesheets worden niet ondersteund","external stylesheets are not supported"
+"upload-processed-skippedExternalLinks","externe verwijzingen worden niet ondersteund","external links are not supported"
+"retrieve-link-name","Geef URL op van afbeelding.                              \n(Start met http://, https:// of ftp:// als protocol)","Enter URL of image.                                      \n(Start with http://, https:// or ftp:// as protocol)"
+"none-svg-ext-confirm","URL lijkt niet naar SVG-bestand te verwijzen.\nDoorgaan?","URL does not seem to refer to SVG file.\nContinu?"
+"sketch-failed","Afbeelding kon niet verwerkt worden.\nProbeer later opnieuw of neem\ncontact op met de beheerder.","Image could not be processed.\nTry again later or contact\nthe system administrator."
+"profiles","Selecteer profiel:","Select profile:"
+"profile-fine","Fineliner","Fineliner"
+"profile-coarse","Edding 500","Edding 500"
+"profile-kid","Kindertekening","Child drawing"
+"profile-custom","<Niet opgeslagen>","<Unsaved>"
+"save-profile-title","Welk profiel vervangen?","Replace which profile?"
+"save-profile-name","Naam van profiel","Name of profile"
+"save-profile-empty","<Leeg profiel>","<Empty profile>"
+"save-profile-no-name","Geen naam","No name"
+"pane-fill","Vulling","Fill"
+"fill","Vulling","Fill"
+"fill-accuracy","Nauwkeurigheid van vulling","Accuracy of filling"
+"fill-fine","Precies","Fine"
+"fill-coarse","Grof","Coarse"
+"fill-angle","Richting","Angle"
+"fill-degrees-orig","%f:1=1 graad:*=* graden%","%f:1=1 degree:*=* degrees%"
+"fill-degrees","Hoek van vullijnen","Angle of fill lines"
+"fill-distance","Afstand tussen vullijnen","Distance between fill lines"
+"fill-distance-fine","Smal","Narrow"
+"fill-distance-coarse","Breed","Wide"
+"fill-thickness","Vullijndikte","Fill line thickness"
+"fill-thin","Dun","Thin"
+"fill-thick","Dik","Thick"
+"pane-draw","Lijnen","Lines"
+"draw","Tekenen lijnen","Draw lines"
+"draw-thickness","Lijndikte","Line thickness"
+"draw-thin","Dun","Thin"
+"draw-thick","Dik","Thick"
+"draw-randomness","'Randomness' van lijn","Randomness of line"
+"draw-few","Exact","Precise"
+"draw-much","Slordig","Sloppy"
+"preview-long","Live voorvertoning van bovenstaande\nparameters toegepast op\nvoorbeeld figuren","Live preview of above\nparameters applied to\nsample figures"
+"pane-color","Kleuren","Colors"
+"draw-opacity","Lijnkleurdekking","Line color transparency"
+"draw-opacity-low","Transparante lijnen","Transparent lines"
+"draw-opacity-high","Dekkend","Solid"
+"fill-opacity","Vulkleurdekking","Fill color transparency"
+"fill-opacity-low","Transparante vulling","Transparent fills"
+"fill-opacity-high","Dekkend","Solid"
+"color-options-ignore-draw-opacity","Negeer bestaande lijnkleurdekking","Ignore existing line transparency"
+"color-options-ignore-fill-opacity","Negeer bestaande vulkleurdekking","Ignore existing fill transparency"
+"color-options-ignore-transparent-layers","Negeer transparante lagen","Ignore transparent layers"
+"pane-fonts","Teksten en lettertypen","Texts and fonts"
+"font-size","Lettertype grootte","Font size"
+"font-size-shrink","Verklein","Shrink"
+"font-size-enlarge","Vergroot","Enlarge"
+"fonts-under-construction","Op dit moment is er nog geen mogelijkheid om zelf een lettertype te selecteren. Comic Sans wordt nu (ondanks brede kritiek op het font) gebruikt, omdat dit font op veel platformen beschikbaar is. In de nabije toekomst zal lettertype-ondersteuning worden verbeterd.","Currently there is no option to select a font. Comic Sans is now (although heavily criticised) used because this font is available on many platforms. Better support for fonts will become available in the near future."
+"pane-settings","Applicatie instellingen","Application settings"
+"options-hide-tooltips","Verberg tooltips","Hide tooltips"
+"options-ignore-all-messages","Toon geen enkele waarschuwing","Do not show any warning"
+"options-ignore-messages-two","Toon geen speciale waarschuwing","Do not show special warning"
+"options-hide-preview","Verberg live voorvertoning","Hide live preview"
+"options-advanced","Geavanceerde opties","Advanced options"
+"save-options","Sla standaardinstellingen op","Save default settings"
+"load-settings-failed","Fout bij inlezen instellingen","Error loading settings"
+"store-settings-failed","Fout bij opslaan instellingen","Error storing settings"
+"store-settings-successful","Instellingen zijn succesvol opgeslagen","Settings are stored successfully"
+"duplicate-session-unsupported","U heeft (waarschijnlijk binnen Chrome) een sessie gedupliceerd.\nDit wordt nog niet ondersteund.\nU start met een nieuwe sessie.","You have (probably within Chrome) duplicated a session.\nThis is not supported yet.\nA new session is started."
+"no-session-storage","Uw browser (of huidige instelling) ondersteunt geen local/session storage.\nU kunt helaas deze browser niet gebruiken.","Your browser (or setting) does not support local/session storage.\nThis browser is therefore not usable unfortunately."
+"under-construction","Help is nog in aanbouw","Help is still under construction"
+"sketchify","
+	<p>
+		Tekeningen en diagrammen gemaakt met een tekenpakket zien er al snel (te) netjes uit.
+		Soms is dat onwenselijk. Dan is Sketchify de tool om zo'n tekening weer tot een schets te maken.
+	</p>
+","
+	<p>
+		Drawings and diagrams created with a drawing tool look (too) neat with little effort.
+		Sometimes this is not what you want. In such cases Sketchify is the tool to turn such a drawing
+		into a sketch again.
+	</p>
+"
+"try-sketchify","Ga naar Sketchify en probeer het zelf","Go to Sketchify and try it yourself"
+"privacy-statement","
+	<h3>LET OP! Nog geen SSL</h3>
+	<p>
+		<strong>Gebruik geen wachtwoorden op deze site die u ook elders gebruikt!</strong>
+	</p>
+	<p>
+		Op dit moment is er nog geen werkend SSL-certificaat beschikbaar voor de tool paradise site.
+		Dit betekent dat informatie die wordt uitgewisseld tussen uw browser en de webserver onversleuteld wordt verzonden.
+		Mocht u zich op een onvertrouwd netwerk bevinden (bedraad of draadloos), gebruik dan geen vertrouwelijke informatie bij één van onze diensten.
+		Als u besluit zich wel aan te melden, vervang dan zodra u op een vertrouwd netwerk bent uw wachtwoord.
+		Dit kan ook via de optie 'Wachtwoord vergeten' op het aanmeldscherm.
+	</p>
+	<h3>Ons beleid</h3>
+	<p>
+		In het kort: we willen graag dat u gebruik maakt van onze diensten, maar we willen zo min mogelijk van u weten bij het leveren van onze diensten.
+		We delen geen informatie met andere partijen.
+	</p>
+	<p>
+		Iets langer: om optimaal gebruik te kunnen maken van enkele diensten, zoals Sketchify, is het noodzakelijk dat instellingen bewaard kunnen worden.
+		Om dit mogelijk te maken moet een account worden aangemaakt. Om een account te identificeren dient een email-adres opgegeven te worden.
+		Toegang tot het account (en daarmee de diensten) wordt beschermd middels een wachtwoord. Voor de dienstverlening hoeven we verder niets van u te weten.
+		U kunt altijd zelf contact met ons opnemen via de feedback optie onderaan de pagina.
+	</p>
+	<p>
+		Uw email-adres of andere informatie wordt niet verstrekt aan andere partijen (zolang de wet niet verplicht om informatie te moeten delen met handhavende instanties).
+	</p>
+	<h3>Wat wordt opgeslagen bij tool paradise?</h3>
+	<p>
+		De volgende informatie wordt opgeslagen per gebruiker/account:
+		<ul>
+			<li>Email-adres</li>
+			<li>Hash van wachtwoord (niet herleidbaar naar wachtwoord)</li>
+			<li>Applicatie-instellingen</li>
+		</ul>
+	</p>
+	<p>
+		Eventueel kan daarnaast informatie worden opgeslagen over het gebruik van de diensten. Hierbij wordt er geen gebruiker- of account-informatie opgeslagen.
+		Deze informatie is bedoeld om de dienstverlening te optimaliseren en/of problemen te detecteren.
+	</p>
+	<p>
+		Omdat gebruikersinformatie niet wordt opgeslagen bij eventuele storingen of problemen kunnen wij u niet helpen puur op basis van de melding dat u om 10:34 uur vanochtend een probleem had.
+		Als wij u moeten ondersteunen bij dergelijke problemen dan moet u meer informatie aanleveren.
+	</p>
+	<h3>Hoe wordt informatie opgeslagen bij tool paradise?</h3>
+	<p>
+		In het kort: Van wachtwoorden wordt alleen een hash opgeslagen. Alle informatie wordt opgeslagen in een database die alleen toegankelijk is voor onze applicaties op de webserver (en niet vanuit de browser).
+	</p>
+	<p>
+		Iets langer: Door het opslaan van een <a href=""https://nl.wikipedia.org/wiki/Encryptie#Hashing_van_wachtwoorden"">hash</a> is het mogelijk gebruikers toegang te
+		verlenen door het ingeven van een wachtwoord, maar wordt het wachtwoord zelf niet opgeslagen.
+		Het opslaan van informatie in een database is bedoeld om een betrouwbare vorm van opslag te hebben. De inhoud wordt dagelijks bewaard in een backup.
+		Alleen de beheerder heeft toegang tot deze backup (alleen bedoeld voor calamiteiten).
+	</p>
+	<h3>Hoe en wat wordt opgeslagen op mijn computer?</h3>
+	<p>
+		In het kort: Sessie-informatie wordt door uw browser opgeslagen op uw computer met behulp van het mechanisme <a href=""https://en.wikipedia.org/wiki/Web_storage"">Web Storage</a>.
+	</p>
+	<p>
+		Iets langer: Sessie-informatie wordt zoveel mogelijk lokaal op uw computer bewaard. Het Web Storage mechanisme zorgt ervoor dat de informatie alleen beschikbaar
+		is voor de tool paradise site en diensten. Uw email-adres of wachtwoord worden niet bewaard in sessie-informatie. Mogelijk biedt uw browser wel aan om ingevoerde
+		gegevens zoals email-adres en wachtwoord voor u te onthouden.
+	</p>
+	<h3>Waar moet ik zelf nog op letten?</h3>
+	<p>
+		Deel nooit accounts met anderen. Deel nooit uw wachtwoord met anderen. Gebruik per site en/of dienst een ander wachtwoord.
+		Mocht een wachtwoord ooit 'geraden' worden door een kwaadwillende, dan heeft hij daarmee niet ook toegang tot andere sites en/of diensten.
+		Laat uw browser alleen uw gegevens (als email-adres en wachtwoord) onthouden als u op uw eigen computer werkt.
+	</p>
+	<p>
+		Kies alleen voor de 'Onthoud mij' optie op het aanmeldscherm op uw eigen computer en wanneer u regelmatig gebruik maakt van onze diensten.
+		Kies voor 'Afmelden' binnen diensten (zoals Sketchify) als u een vertrouwelijk document heeft gebruikt. Bij het afmelden worden namelijk alle
+		tijdelijke bestanden verwijderd vanaf de webserver.
+	</p>
+	<p></p>
+	<a href=""javascript:history.back()"">Terug</a>
+","
+	<h3>BE AWARE! No SSL yet</h3>
+	<p>
+		<strong>Please do not use a password on this site which you use on other sites as well!</strong>
+	</p>
+	<p>
+		At this moment there is no working SSL certificate available for the tool paradise site.
+		This means that information which is exchanged between your browser and the webserver will be sent unencrypted.
+		If you are connected to an untrusted network (wired or wireless) please do not use any confidential informatie at one of our services.
+		If you do decide to sign in please replace your password afterwards as soon as you are connected to a trusted network.
+		Changing your password can also be done through the option 'Password forgotten' on the sign in dialog.
+	</p>
+	<h3>Our policy</h3>
+	<p>
+		In short: we would like you to make use of our services, but we would like to know as little about you as possible when we provide our services.
+		We share no information with other parties.
+	</p>
+	<p>
+		More detail: to make optimal use of our services, like Sketchify, it is necessary that settings can be stored.
+		To make this possible an account has to be created. To identify an account an email address needs to be provided.
+		Access to the account (and with that our services) is protected by using a password. To provide our services we do not need to know more about you.
+		You can always contact us through the feedback option at the bottom of the page.
+	</p>
+	<p>
+		Neither email address nor any other information will be shared with other parties (as long as the law does not force us to share information with law enforcement agencies).
+	</p>
+	<h3>What is being stored at tool paradise?</h3>
+	<p>
+		The following informatie is stored per user/account:
+		<ul>
+			<li>Email address</li>
+			<li>Hash of the password (password can not be derived)</li>
+			<li>Application settings</li>
+		</ul>
+	</p>
+	<p>
+		Information regarding the service usage can be stored. No user or account information is stored together with this type of usage information.
+		If usage information is stored this is for optimising our services or detect any issues with our services.
+	</p>
+	<p>
+		Because no user information is stored together with usage information we can not help you based on a message stating you had a problem at 10:34h this morning.
+		If we need to support you on such issues you will need to provide more information.
+	</p>
+	<h3>How is information stored at tool paradise?</h3>
+	<p>
+		In short: For passwords only a hash is stored. All information is stored in a database which is only accessable for our applications on the webserver (and not from the browser).
+	</p>
+	<p>
+		More detail: By storing only a <a href=""https://en.wikipedia.org/wiki/Cryptographic_hash_function#Password_verification"">hash</a> it is possible to provide users
+		access to our services based on a password, but without the need to store the password itself.
+		Storing information in a database is done to create a reliable storage. The content is backed up on a daily basis and is only accessable by the system administrator
+		(only for desaster recovery).
+	</p>
+	<h3>How and what is stored on my computer?</h3>
+	<p>
+		In short: Session information is stored on your computer by the browser using the <a href=""https://en.wikipedia.org/wiki/Web_storage"">Web Storage</a> mechanism.
+	</p>
+	<p>
+		More detail: Session information is stored on your computer. The Web Storage mechanism ensures that only the tool paradise site and services are able to
+		access this information. Neither email address nor password are stored in session information. It is possible however that your browser will offer you the
+		option to store email address and password information.
+	</p>
+	<h3>What should I pay attention to?</h3>
+	<p>
+		Never share accounts with others. Never share passwords with others. Use a different password per site and/or service.
+		If a password is ever 'guessed' by a wrong doer, he will not be able to reach other sites and/or services.
+		Only let your browser store your credentials (like email address and password) if you are working on your own computer.
+	</p>
+	<p>
+		Only choose the 'Remember me' option on the sign in dialog on your own computer and when you use our services regularly.
+		Choose 'Sign out' within services (like Sketchify) if you have used a confidential document. When signing out all temporary files will
+		be removed from the webserver.
+	</p>
+	<p></p>
+	<a href=""javascript:history.back()"">Back</a>
+"
+"terms-header","Voorwaarden","Terms and conditions"
+"terms-statement","
+	<h3>Gebruiksvoorwaarden</h3>
+	<p>
+		U mag de diensten van tool paradise gebruiken zolang u zich 'netjes' gedraagd. Dat betekent dat u tool paradise en de diensten die daarop
+		geleverd worden niet gebruikt voor zaken die als discrimineren worden ervaren of aanstootgevend zijn. Het betekent ook dat u de diensten
+		'netjes' gebruikt en niet probeert deze te verstoren of probeert te verhinderen dat anderen hier gebruik van kunnen maken.
+	</p>
+	<p>
+		Tool paradise houdt zich te allen tijde het recht voor om accounts te blokkeren of te verwijderen als er verdenkingen zijn dat een
+		gebruiker zich niet 'netjes' gedraagd. Ook kan opgeslagen materiaal als gevolg van voorgaande worden geblokkeerd of verwijderd.
+	</p>
+	<h3>Kosten</h3>
+	<p>
+		Op dit moment worden alle diensten gratis aangeboden. Het kan zijn dat in de toekomst voor één of meer diensten betaald moet
+		worden of dat betaling vrijwillig is (in de vorm van donaties).
+	</p>
+	<h3>Geen garanties</h3>
+	<p>
+		De diensten van tool paradise worden geleverd ""as is"". Er kunnen en worden geen garanties afgegeven. Ook niet over zaken als:
+		<ul>
+			<li>Beschikbaarheid van de dienstverlening</li>
+			<li>Stabiliteit van de dienstverlening</li>
+			<li>Continuïteit van de dienstverlening (naar de toekomst)</li>
+			<li>Ondersteuning voor uw favoriete browser</li>
+		</ul>
+	</p>
+	<p>
+		We doen ons best om moderne browsers te ondersteunen en steken hier veel tijd in. Het kan desondanks voorkomen dat uw browser
+		niet (volledig) werkt met de tool paradise website of webapplicaties. Neem gerust contact op wanneer u problemen ondervindt,
+		maar helaas kunnen wij ook hier geen garantie geven dat wij uw probleem kunnen en gaan verhelpen.
+	</p>
+	<h3>Licenties en copyright</h3>
+	<p>
+		Er zijn geen licenties verbonden aan het gebruik van diensten van tool paradise. Wel dient u zelf rekening te houden dat wanneer u
+		gebruik maakt van materiaal waarop licenties en/of copyright van toepassing zijn, dat deze in de meeste gevallen van toepassing blijven
+		na gebruik van onze diensten. Bij Sketchify bijvoorbeeld wordt een nieuwe tekening gemaakt vanuit een bestaande. De resulterende tekening
+		wordt wel een afgeleid product genoemd. Als de oorspronkelijke tekening via een Creative Commons licentie was verkregen met daarbij een
+		verplichte naamsvermelding, dan blijft deze verplichte naamsvermelding van toepassing op het afgeleide product (de resulterende tekening).
+	</p>
+	<p>
+		U hoeft geen bronvermelding op te nemen wanneer u gebruik maakt van een dienst van tool paradise, maar het wordt gewaardeerd
+		wanneer u wel een verwijzing opneemt naar onze site en/of de gebruikte dienst.
+	</p>
+	<h3>Gebruikte producten</h3>
+	<p>
+		De tool paradise website en webapplicaties zijn geschreven in HTML5/CSS/Javascript en kunnen hierdoor alleen gebruikt worden in een
+		recente browser(versie).
+	</p>
+	<p>
+		Tool paradise en de diensten die daarop worden aangeboden gebruiken een aantal producten van derden. Grote dank is verschuldigd aan de makers
+		van deze producten. Een aantal van de gebruikte producten zijn:
+		<ul>
+			<li><a href=""http://www.d3js.org"" target=""_blank"">D3 (Data-Driven Documents)</a> als belangrijkste hulpmiddel voor de website/webapplicaties.</li>
+			<li><a href=""https://design.google.com/icons/"" target=""_blank"">Material icons van Google</a> voor alle iconen op knoppen en in dialoogvensters.</li>
+			<!--
+			<li><a href=""https://www.google.com/fonts"" target=""_blank"">Google fonts</a> voor de fonts binnen Sketchify.</li>
+			<li><a href=""https://inkscape.org/"" target=""_blank"">Inkscape</a> voor font-bewerkingen binnen Sketchify.</li>
+			<li><a href=""http://php.net"" target=""_blank"">PHP</a> en <a href=""https://nodejs.org/"" target=""_blank"">Node.js</a> voor de server-functionaliteit.</li>
+			<li><a href=""http://phantomjs.org"" target=""_blank"">PhantomJS</a> voor de grafische bewerkingen op de back-end.</li>
+			-->
+			<li><a href=""https://github.com/dperini/nwmatcher"" target=""_blank"">npm - NWMatcher</a> en <a href=""https://github.com/cwdoh/cssparser.js"" target=""_blank"">npm - cssparser.js</a> voor de CSS-bewerkingen op de back-end.</li>
+			<li><a href=""https://github.com/jindw/xmldom"" target=""_blank"">npm - XMLDOM</a> voor XML-bewerkingen op de back-end.</li>
+		</ul>
+	</p>
+	<p></p>
+	<a href=""javascript:history.back()"">Terug</a>
+","
+	<h3>Using our services</h3>
+	<p>
+		You may use the services of tool paradise as long as you do this in a 'decent' manner. This means that you do not use tool paradise or
+		any services for things which can be regarded as discriminating or offensive. This also means you use the services in a decent manner
+		and not try to disrupt the services or prevent others from using the services.
+	</p>
+	<p>
+		Tool paradise has at all times the right to block or remove accounts if any suspicion has arisen that the user did not behave in a
+		'decent' manner. Stored material can as a consequence be blocked or removed as well.
+	</p>
+	<h3>Costs</h3>
+	<p>
+		At this time all services are free to use. It is possible that in the future payment is required for one or more services
+		or that a voluntary payment option is presented.
+	</p>
+	<h3>No guarantees</h3>
+	<p>
+		The services of tool paradise are provided ""as is"". No guarantees can and will be given. This means there are no guarantees for:
+		<ul>
+			<li>Availability of the services</li>
+			<li>Stability of the services</li>
+			<li>Continuity of the services (for the future)</li>
+			<li>Support for your favourite browser</li>
+		</ul>
+	</p>
+	<p>
+		We do our best to support modern browsers and put a lot of effort into this. It is however possible that your browser does
+		not function (completely) with the tool paradise website or webapplications. Please contact us when you encounter problems.
+		Unfortunately we can not guarantee that your problem can and will be solved.
+	</p>
+	<h3>Licenses and copyright</h3>
+	<p>
+		There are no licenses involved in using the services of tool paradise. You are advised to consider the fact that when you use
+		material for which licenses and/or copyrights apply, these will in most situations remain applicable after using our services.
+		With Sketchify for example a new drawing is made from an existing drawing. Such resulting drawing is called a derivative/derived product.
+		If the original drawing was acquired through a Creative Commons license with an attribution clause then the attribution clause remains
+		applicable for the derived product (ie the resulting drawing).
+	</p>
+	<p>
+		You are not required to provide an attribution or citation when using a service from tool paradise. It is however appreciated if
+		you do provide a link back to our site and/or the service.
+	</p>
+	<h3>Products used</h3>
+	<p>
+		The tool paradise website and webapplications are written in HTML5/CSS/Javascript and therefore require a recent browser.
+	</p>
+	<p>
+		Tool paradise and the service provided are using a number of products from third parties. Special thanks are due to the makers of these
+		products. Some of the products used are:
+		<ul>
+			<li><a href=""http://www.d3js.org"" target=""_blank"">D3 (Data-Driven Documents)</a> main tool for the website/webapplication.</li>
+			<li><a href=""https://design.google.com/icons/"" target=""_blank"">Material icons van Google</a> for all icons on buttons and on dialogs.</li>
+			<!--
+			<li><a href=""https://www.google.com/fonts"" target=""_blank"">Google fonts</a> for the fonts within Sketchify.</li>
+			<li><a href=""https://inkscape.org/"" target=""_blank"">Inkscape</a> for processing fonts within Sketchify.</li>
+			<li><a href=""http://php.net"" target=""_blank"">PHP</a> and <a href=""https://nodejs.org/"" target=""_blank"">Node.js</a> for the server functionality.</li>
+			<li><a href=""http://phantomjs.org"" target=""_blank"">PhantomJS</a> for the graphical processing at the back end.</li>
+			-->
+			<li><a href=""https://github.com/dperini/nwmatcher"" target=""_blank"">npm - NWMatcher</a> and <a href=""https://github.com/cwdoh/cssparser.js"" target=""_blank"">npm - cssparser.js</a> for the CSS processing at the back end.</li>
+			<li><a href=""https://github.com/jindw/xmldom"" target=""_blank"">npm - XMLDOM</a> for the XML processing at the back end.</li>
+		</ul>
+	</p>
+	<p></p>
+	<a href=""javascript:history.back()"">Back</a>
+"
+"help-content-main","
+	<h3>Wat is Sketchify?</h3>
+	<p>
+		Met Sketchify kunt u tekeningen die u digitaal gemaakt heeft omzetten naar een schets: tekeningen die handgetekend lijken. Dit gebeurt allemaal op
+		basis van vector-tekeningen die in het <a href=""https://nl.wikipedia.org/wiki/Scalable_Vector_Graphics"" target=""_blank"">SVG-formaat</a> zijn
+		opgeslagen. Diverse tekenprogramma's ondersteunen SVG, zoals Visio, Illustrator en Inkscape.
+	</p>
+	<h3>Hoe werkt Sketchify?</h3>
+	<p>
+		Sketchify past de door u geïmporteerde afbeelding aan door in de tekening kleine 'random' veranderingen aan te brengen in posities en omvang.
+		Rechte lijnen worden een beetje krom, figuren sluiten niet netjes meer en/of de vulling wordt gearceerd in plaats van egaal. Dit heeft het
+		effect alsof de tekening met de hand is gemaakt. U kunt zelf instellen in welke mate de tekening wordt aangepast. Op deze manier kiest u zelf
+		of de tekening getekend lijkt door bijvoorbeeld een professionele tekenaar of een kind.
+	</p>
+	<h3>Wat kan ik instellen?</h3>
+	<p>
+		U kunt diverse zaken zelf instellen. Meestal gebeurt dat door het opgeven van een minimum en een maximum waarde. Sketchify berekent vervolgens
+		zelf een willekeurige (random) waarde binnen dit bereik. Deze waarde wordt dan gebruikt voor de bijbehorende eigenschap (zoals lijndikte).
+		Ieder element krijgt een eigen random waarde voor die eigenschap. Ieder element ziet er dus anders uit nadat de tekening is geschetst.
+		Hoe groter u het bereik maakt, hoe meer 'willekeur' er in het resultaat komt. Meestal geldt ook dat een lagere waarde een minder groot effect
+		heeft op het resultaat. Wilt u dus een professioneel ogende tekening, houd dan de waarden laag en met een klein bereik (beide schuifjes
+		aan de linker zijde). Wilt u tekening waaruit blijkt dat het een eerste schets betreft, gebruik dan grotere waarden en eventueel een groter
+		bereik. Ga naar het menu <span class=""menu-settings anchor"">Instellingen</span> om alle instellingen te bekijken.
+	</p>
+	<h3>Hoe kan ik instellingen bewaren?</h3>
+	<p>
+		Instellingen kunnen bewaard worden in een profiel. De profielen staan op de home-tab <i class=""material-icons anchor"">home</i>. Daar kunt u één
+		van de drie standaard profielen kiezen of uw eigen profiel opslaan. De knop voor het opslaan van een profiel wordt actief zodra u een wijziging
+		heeft gemaakt aan een instelling. U kunt maximaal 6 verschillende profielen opslaan. U kunt ook een bestaand profiel vervangen, mocht u dat willen.
+		Door uw instellingen in een profiel op te slaan, kunt u op een later tijdstip andere tekeningen met dezelfde instellingen omzetten naar een schets.
+	</p>
+	<h3>Hoe bewaar ik het resultaat?</h3>
+	<p>
+		Door naar de home-tab <i class=""material-icons anchor"">home</i> te gaan en daar op de knop <i class=""material-icons"">file_download</i> te
+		klikken. Een dialoogvenster verschijnt met daarin diverse mogelijkheden qua locatie om het resultaat op te slaan. Zo is het mogelijk het resultaat
+		op de computer op te slaan, maar kan ook gekozen worden om het resultaat in een Dropbox-account op te slaan.
+	</p>
+	<h3>Ik heb meer hulp nodig!</h3>
+	<p>
+		Rechstboven in dit helpvenster staan de menu-opties. De <span class=""menu-guide anchor"">Mini-gids</span> helpt u in een paar stappen een
+		eerste schets te maken. Als u de help functie opent (grote help knop linksboven of F1-toets) dan wordt standaard deze mini-gids getoond.
+		De stap die het meest logisch is om te nemen is dan gemarkeerd.
+	</p>
+	<p>
+		Veel plezier!
+	</p>
+	<div class=""spacer""></div>
+","
+	<h3>What is Sketchify?</h3>
+	<p>
+		With Sketchify you can convert your digital drawings to a sketch: drawings that look hand drawn. This is done using vector graphics which are stored
+		in the <a href=""https://en.wikipedia.org/wiki/Scalable_Vector_Graphics"" target=""_blank"">SVG format</a>. Different drawing applications/graphics
+		editors support SVG, like Visio, Illustrator and Inkscape.
+	</p>
+	<h3>How does Sketchify work?</h3>
+	<p>
+		Sketchify changes the imported drawing by applying small random changes to positions and sizes. Straight lines become curved, figures are no
+		longer closed and/or the filling is scratched instead of a solid color. By applying these chances the drawing seems hand drawn. You decide how
+		much and which type of chances are applied to the drawing using a number of settings. In this way you can decide whether the result looks like
+		a professionally drawn image or a child's drawing.
+	</p>
+	<h3>Which settings can I use?</h3>
+	<p>
+		There are many settings. Most settings involve setting a range with a minimum and maximum value. Sketchify will use this range to select a
+		random value from. This value is then used for the associated characteristic (for example line width). Every element will get a new random
+		value for that specific characteristic. All elements will look different after being sketchified. The larger you make the range the more
+		randomness will result. With most settings a smaller value will mean less impact on the result. Do you like a professional looking drawing,
+		use relative small values and small ranges (both sliders to the left). Do you like to make clear that it is a first sketch, use bigger values
+		and possibly larger ranges (both slides to the right). Go to the menu <span class=""menu-settings anchor"">Settings</span> to get more
+		information about the possible settings.
+	</p>
+	<h3>How can I keep my settings?</h3>
+	<p>
+		Settings can be stored in a profile. You can find profiles at the home tab <i class=""material-icons anchor"">home</i>. You can choose one
+		of the three default profiles or store your own profile. The button for storing your current profile becomes active as soon as you have
+		changed a setting. A maximum of 6 profiles can be stored. You can also replace an existing profile if you would like to. By storing your
+		settings in a profile you can later apply these same settings to another drawing and create the same sketch effects.
+	</p>
+	<h3>How do I keep the result?</h3>
+	<p>
+		To store the resulting sketch, go to the home tab <i class=""material-icons anchor"">home</i> and click on the button <i class=""material-icons"">file_download</i>.
+		A dialog appears in which a location can be selected for storing the result. This location can be your computer or a Dropbox account.
+	</p>
+	<h3>I need more help!</h3>
+	<p>
+		The upper right corner of this help window shows the menu options. The <span class=""menu-guide anchor"">Mini guide</span> helps you to
+		create a first sketch in just a few steps. If you open the help function (big help button upper left corner of the screen or F1 key) then
+		the mini guide will be shown. The most logical step to take will be highlighted.
+	</p>
+	<p>
+		Have fun!
+	</p>
+	<div class=""spacer""></div>
+"
+"help-content-settings","
+	<h3>Instellingen details</h3>
+	Instellingen met betrekking tot lijnen (zie de tab <i class=""material-icons anchor"">gesture</i>):
+	<dl>
+		<dt>Lijndikte</dt>
+		<dd>De dikte van de getekende lijnen. Dit betreft meestal de buitenlijnen van figuren.</dd>
+		<dt>'Randomness' van lijn</dt>
+		<dd>De hoeveelheid afwijking ten opzichte van het origineel. Hoe kleiner de waarde hoe meer de lijn op de oorspronkelijke lijkt.</dd>
+	</dl>
+	Instellingen met betrekking tot vulling (zie de tab <i class=""material-icons anchor"">format_paint</i>):
+	<dl>
+		<dt>Vullijndikte</dt>
+		<dd>De dikte van de getekende lijnen voor een vulling. Dit zijn de lijnen waarmee een figuur gearceerd wordt ingekleurd.</dd>
+		<dt>Nauwkeurigheid van vullen</dt>
+		<dd>De nauwkeurigheid waarmee de lijnen het figuur vullen. Hoe kleiner de waarde hoe preciezer de arcering binnen het figuur blijft en de contouren van het figuur volgt.</dd>
+		<dt>Afstand tussen vullijnen</dt>
+		<dd>De afstand tussen de vullijnen van de arcering. Hoe kleiner de waarde hoe minder zichtbaar is van hetgeen onder het figuur zit. De arcering kan hierbij 'vollopen' bij hele kleine waarden en een dikke vullijn.</dd>
+		<dt>Hoek van vullijnen</dt>
+		<dd>De hoek waaronder de arcering is aangebracht. Ieder figuur wordt onder een vaste hoek ingekleurd. Als een groot bereik is ingesteld, zal ieder figuur onder een andere hoek worden gevuld.</dd>
+	</dl>
+	Instellingen met betrekking tot kleuren (zie de tab <i class=""material-icons anchor"">palette</i>):
+	<dl>
+		<dt>Lijnkleurdekking</dt>
+		<dd>De dekking van de (buiten)lijnen waarmee de figuur wordt getekend. Hoe lager de waarde, hoe meer transparant de kleur wordt en dus zichtbaar wordt van hetgeen onder het figuur staat afgebeeld.</dd>
+		<dt>Negeer bestaande lijnkleurdekking</dt>
+		<dd>Bij het bepalen van de uiteindelijke lijnkleurdekking kan een eventueel al aanwezige dekking worden genegeerd. Als deze optie niet is aangevinkt zal een half doorlatende lijnkleur in het origineel in combinatie met een instelling van de lijnkleurdekking die halverwege staat, resulteren in een lijn die nog maar voor een kwart zichtbaar is (dus veel doorlaat).</dd>
+		<dt>Vulkleurdekking</dt>
+		<dd>De dekking van de arcering waarmee een figuur wordt ingekleurd. Hoe lager de waarde, hoe meer transparant de kleur (de vulling) wordt en dus zichtbaar wordt van hetgeen onder het figuur staat afgebeeld.</dd>
+		<dt>Negeer bestaande vulkleurdekking</dt>
+		<dd>(zie uitleg <i>Negeer bestaande lijnkleurdekking</i> hierboven)</dd>
+		<dt>Negeer transparante lagen</dt>
+		<dd>In sommige tekeningen is het nuttig om delen van de tekening onscherp te maken door er een transparante laag over te leggen die onderliggende details wat doet vervagen. Zo'n laag wordt door Sketchify ook geschetst als deze optie niet is aangevinkt. Meestal is dat onwenselijk en kan door het aanvinken van deze optie dergelijke transparante lagen genegeerd worden voor Sketchify (blijven dus in originele vorm aanwezig).<br>Een laag wordt herkend als 'transparant' wanneer deze maximaal een vuldekking heeft van 50% en deze minimaal 3/4 van het totale oppervlak bestrijkt.</dd>
+	</dl>
+	Instellingen met betrekking tot teksten en lettertypen (zie de tab <i class=""material-icons anchor"">format_size</i>):
+	<dl>
+		<dt>Lettertype grootte</dt>
+		<dd>De verkleining of vergroting van de lettertypen in de tekening. Het aangegeven middelpunt staat voor geen enkele verkleining of vergroting. Standaard is een beperkte verkleining van toepassing, omdat Sketchify een lettertype gebruikt dat in de meeste gevallen wat groter is dan standaard lettertypen.</dd>
+	</dl>
+	Applicatie-instellingen (zie de tab <i class=""material-icons anchor"">settings</i>):
+	<dl>
+		<dt>Verberg tooltips</dt>
+		<dd>De zwarte tooltip die verschijnt wanneer de muis over een knop beweegt (waar geen tekst bij staat) kunt u met deze instellingen verbergen.</dd>
+		<dt>Verberg live voorvertoning</dt>
+		<dd>Het voorbeeld onderaan de tabjes lijnen <i class=""material-icons anchor"">gesture</i>, vulling <i class=""material-icons anchor"">format_paint</i>  en kleuren <i class=""material-icons anchor"">palette</i>, kunt u uitschakelen. Dit kan de snelheid van de Sketchify interface iets verhogen.</dd>
+		<dt>Geavanceerde opties</dt>
+		<dd>Als deze instelling is aangevinkt, krijgen de meeste andere instellingen waar een bereik moet worden ingevoerd een knop verdeling <i class=""material-icons"">equalizer</i> erbij. Na het klikken van deze knop (bij het invoeren van een bereik zoals lijndikte) kan de keuze worden gemaakt met welke verdeling de 'random' waarden worden gekozen. Zie verder de uitleg hieronder.</dd>
+	</dl>
+	<p>
+		Verdeling van waarden uit het bereik (bij knop <i class=""material-icons"">equalizer</i>):
+		<dl>
+			<dt>Uniform</dt>
+			<dd>elke waarde uit het bereik heeft gelijke kans om voor te komen</dd>
+			<dt>Normaal met grote deviatie</dt>
+			<dd>de waarden in een brede strook rondom het geselecteerde middelpunt hebben de meeste kans om voor te komen</dd>
+			<dt>Normaal met kleine deviatie</dt>
+			<dd>de waarden in een smalle strook rondom het geselecteerde middelpunt hebben de meeste kans om voor te komen</dd>
+		</dl>
+		Bij de opties 'Normaal met grote deviatie' en 'Normaal met kleine deviatie' wordt een extra schuifknop zichtbaar binnen het bereik die het voornoemde middelpunt is.
+		Dit middelpunt mag samenvallen of in de buurt liggen van een minimum of maximum waarde. In zo'n geval komen waarden in de buurt van het minimum respectievelijk
+		het maximum het meeste voor.
+	</p>
+	<div class=""spacer""></div>
+","
+	<h3>Settings details</h3>
+	Settings for lines (see the tab <i class=""material-icons anchor"">gesture</i>):
+	<dl>
+		<dt>Line thickness</dt>
+		<dd>The thickness of the lines drawn. This is often the outline of a figure.</dd>
+		<dt>Randomness of line</dt>
+		<dd>The randomness relative to the original line. The smaller the value the more it resembles the original.</dd>
+	</dl>
+	Settings for fill (see the tab <i class=""material-icons anchor"">format_paint</i>):
+	<dl>
+		<dt>Fill line thickness</dt>
+		<dd>The thickness of the lines used for filling. These are the lines used for filling in a figure.</dd>
+		<dt>Accuracy of filling</dt>
+		<dd>The accuracy of filling the figure. The smaller the value the more precise the figure contours are followed.</dd>
+		<dt>Distance between fill lines</dt>
+		<dd>The distance between the lines making up the filling. The smaller the value the more the background becomes hidden. A small value together with a large fill line thickness can flood a figure.</dd>
+		<dt>Angle between fill lines</dt>
+		<dd>The angle of the filling lines. Every figure is filled with a fixed angle. If a large range is selected then every figure receives its own fill angle.</dd>
+	</dl>
+	Settings for color (see the tab <i class=""material-icons anchor"">palette</i>):
+	<dl>
+		<dt>Line color transparency</dt>
+		<dd>The transparency of the (out)lines of the figures drawn. The smaller the value the more transparent the line color becomes. Figures below the line will become visible (the lines shine through).</dd>
+		<dt>Ignore existing line color transparency</dt>
+		<dd>A line transparency in the orignal drawing can be ignored when calculating the final line transparency. If this option is not selected then a 50% transparent line color in the original combined with a 50% transparent line color in the setting will result in a %25 transparent line in the sketched drawing.</dd>
+		<dt>Fill color transparency</dt>
+		<dd>The transparency of the fill lines of the figure. The smaller the value the more transparent the filling color becomes. Figures below the filling will become visible (the fill lines shine through).</dd>
+		<dt>Ignore existing fill color transparency</dt>
+		<dd>(see the above explanation <i>Ignore existing line color transparency</i>)</dd>
+		<dt>Ignore transparent layers</dt>
+		<dd>In some drawings it is usefull to blur part of the drawing by covering them with a transparent layer. Such a layer will also be sketchified if this option is not selected. Often this is undesirable and by selecting this option the layer will be untouched (and blur part of the drawing as designed).<br>A layer is recognized as a transparent layer if it is at least 50% transparent and covers at least 3/4 of the total drawing area.</dd>
+	</dl>
+	Settings for texts and fonts (see the tab <i class=""material-icons anchor"">format_size</i>):
+	<dl>
+		<dt>Font size</dt>
+		<dd>The shrinking or enlarging of the font used in the drawing. The specified middle point refers to no shrinking or enlargement. Standard a little shrinking is applied because Sketchify uses a rather large font.</dd>
+	</dl>
+	Application settings (see the tab <i class=""material-icons anchor"">settings</i>):
+	<dl>
+		<dt>Hide tooltips</dt>
+		<dd>Hide the black tooltip which appears when the mouse moves over a button (which has no text).</dd>
+		<dt>Hide live preview</dt>
+		<dd>Hide the live preview at the bottom of the tabs lines <i class=""material-icons anchor"">gesture</i>, fill <i class=""material-icons anchor"">format_paint</i>  and colors <i class=""material-icons anchor"">palette</i>. This can improve the user interface performance of Sketchify (if network latency is high).</dd>
+		<dt>Advanced options</dt>
+		<dd>If this option is selected a button distribution <i class=""material-icons"">equalizer</i> is added to the range settings.  After pressing this button (for example when setting the range of the line thickness) a distribution can be selected which is used for selecting random values from the range. See the explantion below.</dd>
+	</dl>
+	<p>
+		Distribution of values from the selected range (for button <i class=""material-icons"">equalizer</i>):
+		<dl>
+			<dt>Uniform</dt>
+			<dd>every value from the range has equal chance in being used</dd>
+			<dt>Normal with large deviation</dt>
+			<dd>the values in a wide area around the selected center have the biggest chance of being used</dd>
+			<dt>Normal with small deviation</dt>
+			<dd>the values in a narrow area around the selected center have the biggest chance of being used</dd>
+		</dl>
+		For the options 'Normal with large deviation' and 'Normal with small deviation' an extra slider becomes visible to specify the previously mentioned center.
+		This center can be at or near the minimum or maximum of the range. In such cases the used values will be all near the minimum respectively maximum value.
+	</p>
+	<div class=""spacer""></div>
+"
+"help-content-guide","
+	<h3>Mini-gids</h3>
+	Deze pagina bevat in het kort de stappen om een schets te maken van een bestaande SVG-afbeelding. U kunt binnen deze helptekst op de icoontjes van
+	de tabs klikken om de tabs te openen. Op deze manier hoeft u dit helpscherm niet te verlaten. (Klikken op de icoontjes van knoppen heeft geen effect)
+	<ul>
+		<li class=""step1"">
+			Op home-tab <i class=""material-icons anchor"">home</i>: klik op de knop <i class=""material-icons"">file_download</i> om een bestand te importeren in Sketchify.
+			De tekening verschijnt in beeld. Door te klikken en te slepen in de tekening kan deze ingezoomd worden en kunnen de delen die uit beeld vallen zichtbaar worden gemaakt. Met SHIFT + klikken wordt uitgezoomd.
+		</li>
+		<li class=""step2"">
+			Op home-tab <i class=""material-icons anchor"">home</i>: selecteer het gewenste profiel uit de keuzelijst. Standaardprofielen zijn (in aflopende nauwkeurigheid):
+			<ul>
+				<li>Fineliner</li>
+				<li>Edding 500</li>
+				<li>Kindertekening</li>
+			</ul>
+		</li>
+		<li class=""step3"">
+			Op home-tab <i class=""material-icons anchor"">home</i>: klik op de knop <i class=""material-icons"">brush</i> om de gekozen instellingen uit het profiel toe te passen op de tekening.
+			Een schets van de tekening verschijnt in beeld. U kunt meermaals op de knop klikken en telkens zal een nieuwe schets worden gemaakt.
+			Herhaal dit totdat een schets verschijnt die u wilt houden.
+		</li>
+		<li class=""step4"">
+			Op home-tab <i class=""material-icons anchor"">home</i>: klik op de knop <i class=""material-icons"">file_upload</i> om de gemaakte (zichtbare) schets te exporteren uit Sketchify.
+			U kunt ervoor kiezen om de schets op te slaan in een bestand op uw computer of in een Dropbox-account.
+		</li>
+	</ul>
+	Vervolgstappen:
+	<ul>
+		<li class=""step5"">
+			Open één van de instellingen tabs:
+			<ul>
+				<li>Lijnen <i class=""material-icons anchor"">gesture</i> - instellen van lijnen</li>
+				<li>Vulling <i class=""material-icons anchor"">format_paint</i> - instellen van vulling</li>
+				<li>Kleuren <i class=""material-icons anchor"">palette</i> - instellen van kleuren (zowel lijnen als vulling)</li>
+				<li>Teksten en lettertypen <i class=""material-icons anchor"">format_size</i> - instellen van de grootte van lettertypen</li>
+			</ul>
+		</li>
+		<li class=""step6"">
+			Stel met behulp van de schuifjes het bereik in van een instelling en druk op de knop <i class=""material-icons"">brush</i> om de nieuwe
+			instelling toe te passen op de tekening. Bij het maken van de schets zal telkens een willekeurige waarde worden gekozen uit het
+			geselecteerde bereik om daarmee een eigenschap (zoals lijndikte) in te vullen. Een klein bereik (beide schuifjes dicht bij elkaar) betekent
+			dat de waarden altijd dicht bij elkaar in de buurt liggen (alle lijnen ongeveer even dik). Een groot bereik (beide schuifjes liggen ver uit elkaar)
+			levert waarden die mogelijk flink verschillen (allemaal verschillende lijndikten).
+		</li>
+		<li class=""step7"">
+			Als u de gemaakte instellingen wilt bewaren zodat u deze later ook kunt gebruiken bij een andere tekening, ga dan naar de home tab <i class=""material-icons anchor"">home</i>.
+			Druk op de knop <i class=""material-icons"">save</i> om de huidige instellingen te bewaren (de knop is alleen actief als een instelling is gewijzigd
+			ten opzichte van het eerder gekozen profiel). U kunt maximaal 6 verschillende profielen opslaan. U krijgt de keuze op welke plek u het profiel wilt opslaan.
+			Ten slotte kunt u de naam opgeven waaronder het profiel moet worden bewaard.
+		</li>
+	</ul>
+	<div class=""spacer""></div>
+","
+	<h3>Mini guide</h3>
+	This page explains in a number of steps how to create a sketch from an existing SVG image. Inside this help text you can click on tab icons to open the
+	corresponding tab. This way you do not have to leave the help menu. (Clicking on button icons does not result in any action)
+	<ul>
+		<li class=""step1"">
+			The home tab <i class=""material-icons anchor"">home</i>: click on the button <i class=""material-icons"">file_download</i> to import an image into Sketchify.
+			The drawing will appear on screen. By clicking and draging the drawing you can zoom in and/or move parts into view. You can zoom out by SHIFT + clicking.
+		</li>
+		<li class=""step2"">
+			The home tab <i class=""material-icons anchor"">home</i>: select the profile from the drop down list. Standard profiles are (in descending coarseness):
+			<ul>
+				<li>Fineliner</li>
+				<li>Edding 500</li>
+				<li>Child drawing</li>
+			</ul>
+		</li>
+		<li class=""step3"">
+			The home tab <i class=""material-icons anchor"">home</i>: click on the button <i class=""material-icons"">brush</i> to apply (the chosen settings from) the profile to the drawing.
+			A sketch of the drawing appears on screen. You can push this button repeatedly to create new sketches.
+			Repeat this until a sketch appears that you would like to keep.
+		</li>
+		<li class=""step4"">
+			The home tab <i class=""material-icons anchor"">home</i>: click on the button <i class=""material-icons"">file_upload</i> to export the sketchified (and currently visible) drawing.
+			You can store the drawing in a file on your computer or in a Dropbox account.
+		</li>
+	</ul>
+	Next steps:
+	<ul>
+		<li class=""step5"">
+			Open one of the settings tabs:
+			<ul>
+				<li>Lines <i class=""material-icons anchor"">gesture</i> - line settings</li>
+				<li>Fill <i class=""material-icons anchor"">format_paint</i> - fill settings</li>
+				<li>Colors <i class=""material-icons anchor"">palette</i> - color settings (both lines and fills)</li>
+				<li>Texts and fonts <i class=""material-icons anchor"">format_size</i> - font size settings</li>
+			</ul>
+		</li>
+		<li class=""step6"">
+			Use the sliders to set the range of a setting and push the button <i class=""material-icons"">brush</i> to apply the new setting to the drawing.
+			When sketchifying a drawing a random value from the selected range will be used for the given setting (for example the line width). A small range
+			(both sliders close to each other) results in random values very near to each other (for example all lines having a very similar width). A large
+			range (both sliders far apart) results in random and possibly very distinct values (for example all lines with very different widths).
+		</li>
+		<li class=""step7"">
+			If you want to keep the chosen settings so you can use it later on another drawing go the the home tab <i class=""material-icons anchor"">home</i>.
+			Click on the button <i class=""material-icons"">save</i> to store the current settings (the button will only be active if a setting has changed in
+			respect to the previously chosen profile). At most 6 different profiles can be stored. You are provided with a choice at which location to store the profile.
+			Finally you can enter the name for the profile you are storing.
+		</li>
+	</ul>
+	<div class=""spacer""></div>
+"
+"help-content-feedback","
+	Hello world feedback
+","
+	Hello world feedback
+"
+"help-content-about","
+	<h3>Huidige versie</h3>
+	<dl>
+		<dt>Release-datum</dt>
+		<dd>11 april 2016</dd>
+		<dt>Bugfixes</dt>
+		<dd><ul>
+			<li>Issue in Chrome wanneer &lt;use&gt;-tag wordt gebruikt (bijvoorbeeld bij markers).</li>
+		</ul></dd>
+		<dt>Uitbreidingen</dt>
+		<dd><ul>
+			<li>Ondersteuning toegevoegd voor importeren en exporteren uit/naar Dropbox.</li>
+			<li>Ondersteuning toegevoegd voor importeren vanaf URL.</li>
+			<li>Voorbeeldafbeelding opgenomen voor een snelle start.</li>
+		</ul></dd>
+		<dt>Openstaande punten/wensenlijst</dt>
+		<dd><ul>
+			<li>Toevoegen mogelijkheid om bug direct te melden vanuit Sketchify (inclusief de huidige sketch).</li>
+			<li>Betere ondersteuning voor fonts (dit is vrij lastig platformonafhankelijk te doen).</li>
+			<li>Meer mogelijkheden voor exporteren resultaat (PDF/PNG).</li>
+			<li>Diverse verbeteringen intern.</li>
+			<li><a href=""feedback.html"">Mail je wensen</a></li>
+		</ul></dd>
+	</dl>
+	<h3>Vorige versies</h3>
+	<dl>
+		<dt>Release-datum</dt>
+		<dd>17 februari 2016</dd>
+		<dt>Bugfixes</dt>
+		<dd><ul>
+			<li>Een &lt;path&gt; element met een leeg ""d"" attribuut wordt niet goed herkend.</li>
+		</ul></dd>
+		<dt>Uitbreidingen</dt>
+		<dd><ul>
+			<li>Overzicht met releases opgenomen in ""Versie""-scherm binnen de help.</li>
+		</ul></dd>
+		<dd><div class=""group divider""></div></dd>
+	</dl>
+	<dl>
+		<dt>Release-datum</dt>
+		<dd>14 februari 2016</dd>
+		<dt>Bugfixes</dt>
+		<dd><ul>
+			<li>Een &lt;path&gt; element met een coördinaat in exponentiële notatie (zoals ""2.3e-5"") wordt niet goed herkend.</li>
+			<li>Een transformatie in matrix-notatie wordt niet goed herkend bij bepalen rotatie (nodig om vulling in juiste richting te tekenen).</li>
+		</ul></dd>
+		<dd><div class=""group divider""></div></dd>
+	</dl>
+	<dl>
+		<dt>Release-datum</dt>
+		<dd>30 januari 2016</dd>
+		<dt>Bugfixes</dt>
+		<dd><ul>
+			<li>Een &lt;text&gt; element met meerdere &lt; of &gt; karakters direct achter elkaar wordt niet goed herkend.</li>
+			<li>Enkele visuele problemen met Internet Explorer (onnodige verticale scrollbar en te smalle slider-pane).</li>
+		</ul></dd>
+		<dt>Uitbreidingen</dt>
+		<dd><ul>
+			<li>Help-schermen.</li>
+		</ul></dd>
+		<dd><div class=""group divider""></div></dd>
+	</dl>
+	<dl>
+		<dt>Release-datum</dt>
+		<dd>5 januari 2016</dd>
+		<dt>Eerste versie online</dt>
+		<dd></dd>
+	</dl>
+	<div class=""spacer""></div>
+","
+	<h3>Current version</h3>
+	<dl>
+		<dt>Release date</dt>
+		<dd>April 11th 2016</dd>
+		<dt>Bugfixes</dt>
+		<dd><ul>
+			<li>Issue in Chrome when &lt;use&gt; tag is used (for example in markers).</li>
+		</ul></dd>
+		<dt>Extensions</dt>
+		<dd><ul>
+			<li>Added support for uploading and downloading of image through Dropbox.</li>
+			<li>Added support for uploading of image through URL.</li>
+			<li>Added example image for a quick start.</li>
+		</ul></dd>
+		<dt>Open issues/wishlist</dt>
+		<dd><ul>
+			<li>Add option to report a bug directly from Sketchify (including the current sketch).</li>
+			<li>Better support for fonts (doing this platform independently is pretty difficult).</li>
+			<li>More options for downloading result (PDF/PNG).</li>
+			<li>Multiple internal enhancements.</li>
+			<li><a href=""feedback.html"">Mail your wishes</a></li>
+		</ul></dd>
+	</dl>
+	<h3>Previous versions</h3>
+	<dl>
+		<dt>Release date</dt>
+		<dd>February 17th 2016</dd>
+		<dt>Bugfixes</dt>
+		<dd><ul>
+			<li>A &lt;path&gt; element with an empty ""d"" attribute is not parsed correctly.</li>
+		</ul></dd>
+		<dt>Extensions</dt>
+		<dd><ul>
+			<li>Release history added to the ""Version""-tab within the help.</li>
+		</ul></dd>
+		<dd><div class=""group divider""></div></dd>
+	</dl>
+	<dl>
+		<dt>Release date</dt>
+		<dd>February 14th 2016</dd>
+		<dt>Bugfixes</dt>
+		<dd><ul>
+			<li>A &lt;path&gt; element with a coordinate in exponential notation (like ""2.3e-5"") is not parsed correctly.</li>
+			<li>A transformation in matrix-notation is not processed correctly for calculating rotation (needed to draw fill in right direction).</li>
+		</ul></dd>
+		<dd><div class=""group divider""></div></dd>
+	</dl>
+	<dl>
+		<dt>Release date</dt>
+		<dd>January 30th 2016</dd>
+		<dt>Bugfixes</dt>
+		<dd><ul>
+			<li>A &lt;text&gt; element with multiple &lt; or &gt; characters directly behind each other is not parsed correctly.</li>
+			<li>Some visual problems with Internet Explorer (unnecessary vertical scrollbar and too small slider-pane).</li>
+		</ul></dd>
+		<dt>Extensions</dt>
+		<dd><ul>
+			<li>Help screens.</li>
+		</ul></dd>
+		<dd><div class=""group divider""></div></dd>
+	</dl>
+	<dl>
+		<dt>Release date</dt>
+		<dd>January 5th 2016</dd>
+		<dt>First version online</dt>
+		<dd></dd>
+	</dl>
+	<div class=""spacer""></div>
+"

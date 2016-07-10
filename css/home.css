@@ -1,0 +1,115 @@
+body {
+	background-color: #6bbdff;
+	color: #ffffff;
+}
+
+#main {
+	position: absolute;
+	margin-top: 1vh;
+	margin-bottom: 5vh;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding-bottom: 1vw;
+}
+
+h1.home {
+	cursor: pointer;
+}
+
+.header {
+	text-align: right;
+	margin-bottom: 5vh;
+}
+
+.header .inline:not(.hidden) {
+	display: inline-block;
+}
+
+.header [lang] {
+	cursor: pointer;
+}
+
+.footer {
+	text-align: right;
+	margin-top: 2vw;
+}
+
+.footer .inline {
+	display: inline-block;
+	margin-left: 1vw;
+}
+
+.footer a, .footer a:visited {
+	text-decoration: none;
+}
+
+a {
+	color: #ffffff;
+}
+
+p {
+	margin-left: 3vw;
+	margin-right: 3vw;
+}
+
+li {
+	margin-left: 5vw;
+}
+
+.hidden {
+	display: none;
+}
+
+#sign-in-button, #sign-out-button, #user-settings-button, #go-sketchify-button {
+	cursor: pointer;
+}
+
+.button-spacer {
+	display: inline-block;
+	width: 1vw;
+}
+
+h1 {
+	text-align: center;
+}
+
+#sketchify {
+	position: relative;
+	left: 0px;
+	right: 0px;
+	cursor: pointer;
+}
+
+#sketchify-container {
+	padding-left: 4vw;
+	padding-right: 4vw;
+}
+
+#sketchify svg {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#go-sketchify {
+	margin-top: 0.2vw;
+	margin-left: 2vw;
+}
+
+.extra-space {
+	height: 8vh;
+}
+
+.linkedin {
+	display: inline-block;
+}
+
+.linkedin img {
+	vertical-align: top;
+}
+
+.linkedin a {
+	font-size: 12px;
+	text-decoration: none;
+	vertical-align: top;
+}
