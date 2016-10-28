@@ -1475,7 +1475,8 @@ function addEventHandlersUpload(successCallback) {
 	;
 	d3.select("#retrieve-example-button")
 		.on("click", function() {
-			uploadLink("http://www.toolparadise.nl/example.svg", successCallback);
+			//uploadLink("http://www.toolparadise.nl/example.svg", successCallback);	// Why does this fail since oct 2016?
+			uploadLink("https://github.com/ErikOnBike/toolparadise-website/raw/master/example.svg", successCallback);
 		})
 	;
 }
