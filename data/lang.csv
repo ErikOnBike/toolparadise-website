@@ -7,7 +7,7 @@
 "help-menu-feedback","Feedback","Feedback"
 "help-menu-about","Versie","Version"
 "sp-load-svg","Ga naar de home-tab <i class=""material-icons large"">home</i> om een afbeelding in te lezen.\nDe afbeelding dient in het SVG-formaat te zijn.","Go the home tab <i class=""material-icons large"">home</i> to read in a drawing.\nThe drawing must be in the SVG format."
-"sp-load-svg-button","Druk op het importeer-icoon <i class=""material-icons large"">file_upload</i> om de afbeelding\nin te lezen. Een dialoogvenster verschijnt vervolgens\nwaarmee een SVG-bestand geselecteerd kan worden.","Click on <i class=""material-icons large"">file_upload</i> to\nread the drawing."
+"sp-load-svg-button","Druk op het open-icoon <i class=""material-icons large"">file_upload</i> om de afbeelding\nin te lezen. Een dialoogvenster verschijnt vervolgens\nwaarmee een SVG-bestand geselecteerd kan worden.","Click on <i class=""material-icons large"">file_upload</i> to\nread the drawing."
 "sign-in-first","U moet zich aanmelden om hier gebruik\nvan te kunnen maken. Dit kan betekenen\ndat u zich eerst moet registreren door\neen nieuw account aan te maken.\nRegistreren kan vanaf het aanmeldscherm.","You need to sign in before you can use this.\nThis might mean you will have to sign up for a\nnew account first. Sign up is available on the\nsign in screen."
 "sign-in-or-up","Aanmelden/registreren","Sign in/sign up"
 "sign-in","Aanmelden met bestaand account","Sign in using existing account"
@@ -42,7 +42,7 @@
 "activate-failed","Het activeren van het account is mislukt.\nMogelijk is de tijdlimiet overschreden.\nProbeer opnieuw te registreren of neem\ncontact op met de beheerder.","The account could not be activated.\nMaybe the time limit has expired.\nTry to register again or contact the\nsystem administrator."
 "session-failure","Fout bij aanmelden","Error during sign-in"
 "session-expired","De sessie is verlopen","The session has expired"
-"session-empty","Er is nog geen afbeelding geïmporteerd","No image is imported yet"
+"session-empty","Er is nog geen afbeelding geïmporteerd","No image is opened yet"
 "email","E-mail","E-mail"
 "password","Wachtwoord","Password"
 "password-old","Huidige","Current"
@@ -78,10 +78,10 @@
 "download-location","Op welke locatie?","At which location?"
 "download-local","Mijn computer","My computer"
 "download-dropbox","Mijn Dropbox","My Dropbox"
-"download-nothing","Nog geen afbeelding geïmporteerd.\nImporteer en bewerk eerst een\nafbeelding.","No image imported yet.\nPlease import and edit an\nimage first."
-"download-success","Afbeelding is geëxporteerd.","Image is exported."
-"download-failed","Afbeelding kon niet geëxporteerd worden.\nFoutmelding:\n","Image could not be exported.\nError message:\n"
-"download-cancelled","Het exporteren is geannuleerd.\nAfbeelding is niet geëxporteerd.","The export is cancelled.\nImage is not exported."
+"download-nothing","Nog geen afbeelding geïmporteerd.\nOpen en bewerk eerst een\nafbeelding.","No image opened yet.\nPlease open and edit an\nimage first."
+"download-success","Afbeelding is geëxporteerd.","Image is saved."
+"download-failed","Afbeelding kon niet geëxporteerd worden.\nFoutmelding:\n","Image could not be saved.\nError message:\n"
+"download-cancelled","Het opslaan is geannuleerd.\nAfbeelding is niet geëxporteerd.","Saving image is cancelled.\nImage is not saved."
 "upload-location","Vanaf welke locatie?","From which location?"
 "upload-local","Mijn computer","My computer"
 "upload-dropbox","Mijn Dropbox","My Dropbox"
@@ -89,11 +89,11 @@
 "upload-link-wrong-protocol","URL voor afbeelding moet beginnen met één van\nonderstaande protocollen:\n    http://\n    https://\n    ftp://","URL for image should start with one of\nthe following protocols:\n    http://\n    https://\n    ftp://"
 "upload-example","Sketchify voorbeeldafbeelding","Sketchify example image"
 "upload-too-many","Er kan maar 1 afbeelding per\nkeer gelezen worden.\nAlleen eerste wordt gebruikt.","It is only possible to read\n1 image at a time.\nThe first will be used."
-"upload-not-svg","Te importeren afbeelding is geen SVG-bestand.\nAlleen SVG-bestanden worden ondersteund.\nConverteer afbeelding en probeer opnieuw.","Image to import is not a SVG file.\nOnly SVG files are accepted.\nPlease convert image and try again."
-"upload-failed","Afbeelding kon niet geïmporteerd worden.\nControleer of het bestand wel goed\nleesbaar is in andere programma's.\nAls dat het geval is neem dan alstublieft\ncontact op met de beheerder.","Image could not be imported.\nTest if file is readable in other\napplications. If so please contact\nthe system administrator."
-"upload-failed-resource","Afbeelding kon niet geïmporteerd worden.\nControleer of het bestand wel goed\nbenaderbaar is (via browser bijvoorbeeld).","Image could not be imported.\nTest if file is accessable from another\napplication (like your browser itself)."
-"upload-too-big","Afbeelding kon niet geïmporteerd worden.\nHet bestand is te groot (meer dan 10Mb).","Image could not be imported.\nThe file is too big (more than 10Mb)."
-"upload-cancelled","Het importeren is geannuleerd.","The import is cancelled."
+"upload-not-svg","Te openen afbeelding is geen SVG-bestand.\nAlleen SVG-bestanden worden ondersteund.\nConverteer afbeelding en probeer opnieuw.","Image to open is not a SVG file.\nOnly SVG files are accepted.\nPlease convert image and try again."
+"upload-failed","Afbeelding kon niet geïmporteerd worden.\nControleer of het bestand wel goed\nleesbaar is in andere programma's.\nAls dat het geval is neem dan alstublieft\ncontact op met de beheerder.","Image could not be opened.\nTest if file is readable in other\napplications. If so please contact\nthe system administrator."
+"upload-failed-resource","Afbeelding kon niet geïmporteerd worden.\nControleer of het bestand wel goed\nbenaderbaar is (via browser bijvoorbeeld).","Image could not be opened.\nTest if file is accessable from another\napplication (like your browser itself)."
+"upload-too-big","Afbeelding kon niet geïmporteerd worden.\nHet bestand is te groot (meer dan 10Mb).","Image could not be opened.\nThe file is too big (more than 10Mb)."
+"upload-cancelled","Het openen is geannuleerd.","Opening image is cancelled."
 "upload-missing","Geen afbeelding aanwezig op opgegeven locatie.","No image present at specified location."
 "upload-processed","Het SVG-bestand bevat één of meerdere elementen\ndie niet (volledig) ondersteund worden.","The SVG file contains one or more elements\nwhich are not (fully) supported."
 "upload-processed2","Let op de onderstaande zaken:","Please pay attention to the following:"
@@ -540,7 +540,7 @@
 	</p>
 	<h3>How does Sketchify work?</h3>
 	<p>
-		Sketchify changes the imported drawing by applying small random changes to positions and sizes. Straight lines become curved, figures are no
+		Sketchify changes the opened drawing by applying small random changes to positions and sizes. Straight lines become curved, figures are no
 		longer closed and/or the filling is scratched instead of a solid color. By applying these chances the drawing seems hand drawn. You decide how
 		much and which type of chances are applied to the drawing using a number of settings. In this way you can decide whether the result looks like
 		a professionally drawn image or a child's drawing.
@@ -622,6 +622,8 @@
 		<dd>De zwarte tooltip die verschijnt wanneer de muis over een knop beweegt (waar geen tekst bij staat) kunt u met deze instellingen verbergen.</dd>
 		<dt>Verberg live voorvertoning</dt>
 		<dd>Het voorbeeld onderaan de tabjes lijnen <i class=""material-icons anchor"">gesture</i>, vulling <i class=""material-icons anchor"">format_paint</i>  en kleuren <i class=""material-icons anchor"">palette</i>, kunt u uitschakelen. Dit kan de snelheid van de Sketchify interface iets verhogen.</dd>
+		<dt>Verberg verwerkingsberichten</dt>
+		<dd>Verberg de berichten die verschijnen wanneer een bestand geopend wordt of Sketchifying plaatsvindt.</dd>
 		<dt>Geavanceerde opties</dt>
 		<dd>Als deze instelling is aangevinkt, krijgen de meeste andere instellingen waar een bereik moet worden ingevoerd een knop verdeling <i class=""material-icons"">equalizer</i> erbij. Na het klikken van deze knop (bij het invoeren van een bereik zoals lijndikte) kan de keuze worden gemaakt met welke verdeling de 'random' waarden worden gekozen. Zie verder de uitleg hieronder.</dd>
 	</dl>
@@ -684,6 +686,8 @@
 		<dd>Hide the black tooltip which appears when the mouse moves over a button (which has no text).</dd>
 		<dt>Hide live preview</dt>
 		<dd>Hide the live preview at the bottom of the tabs lines <i class=""material-icons anchor"">gesture</i>, fill <i class=""material-icons anchor"">format_paint</i>  and colors <i class=""material-icons anchor"">palette</i>. This can improve the user interface performance of Sketchify (if network latency is high).</dd>
+		<dt>Hide processing message</dt>
+		<dd>Hide the message which appears when opening a file and/or Sketchifying a drawing.</dd>
 		<dt>Advanced options</dt>
 		<dd>If this option is selected a button distribution <i class=""material-icons"">equalizer</i> is added to the range settings.  After pressing this button (for example when setting the range of the line thickness) a distribution can be selected which is used for selecting random values from the range. See the explantion below.</dd>
 	</dl>
@@ -708,7 +712,7 @@
 	de tabs klikken om de tabs te openen. Op deze manier hoeft u dit helpscherm niet te verlaten. (Klikken op de icoontjes van knoppen heeft geen effect)
 	<ul>
 		<li class=""step1"">
-			Op home-tab <i class=""material-icons anchor"">home</i>: klik op de knop <i class=""material-icons"">file_download</i> om een bestand te importeren in Sketchify.
+			Op home-tab <i class=""material-icons anchor"">home</i>: klik op de knop <i class=""material-icons"">file_download</i> om een bestand te openen in Sketchify.
 			De tekening verschijnt in beeld. Door te klikken en te slepen in de tekening kan deze ingezoomd worden en kunnen de delen die uit beeld vallen zichtbaar worden gemaakt. Met SHIFT + klikken wordt uitgezoomd.
 		</li>
 		<li class=""step2"">
@@ -725,7 +729,7 @@
 			Herhaal dit totdat een schets verschijnt die u wilt houden.
 		</li>
 		<li class=""step4"">
-			Op home-tab <i class=""material-icons anchor"">home</i>: klik op de knop <i class=""material-icons"">file_upload</i> om de gemaakte (zichtbare) schets te exporteren uit Sketchify.
+			Op home-tab <i class=""material-icons anchor"">home</i>: klik op de knop <i class=""material-icons"">file_upload</i> om de gemaakte (zichtbare) schets op te slaan vanuit Sketchify.
 			U kunt ervoor kiezen om de schets op te slaan in een bestand op uw computer of in een Dropbox-account.
 		</li>
 	</ul>
@@ -761,8 +765,8 @@
 	corresponding tab. This way you do not have to leave the help menu. (Clicking on button icons does not result in any action)
 	<ul>
 		<li class=""step1"">
-			The home tab <i class=""material-icons anchor"">home</i>: click on the button <i class=""material-icons"">file_download</i> to import an image into Sketchify.
-			The drawing will appear on screen. By clicking and draging the drawing you can zoom in and/or move parts into view. You can zoom out by SHIFT + clicking.
+			The home tab <i class=""material-icons anchor"">home</i>: click on the button <i class=""material-icons"">file_download</i> to open an image into Sketchify.
+			The drawing will appear on screen. By clicking and dragging the drawing you can zoom in and/or move parts into view. You can zoom out by SHIFT + clicking.
 		</li>
 		<li class=""step2"">
 			The home tab <i class=""material-icons anchor"">home</i>: select the profile from the drop down list. Standard profiles are (in descending coarseness):
@@ -778,7 +782,7 @@
 			Repeat this until a sketch appears that you would like to keep.
 		</li>
 		<li class=""step4"">
-			The home tab <i class=""material-icons anchor"">home</i>: click on the button <i class=""material-icons"">file_upload</i> to export the sketchified (and currently visible) drawing.
+			The home tab <i class=""material-icons anchor"">home</i>: click on the button <i class=""material-icons"">file_upload</i> to save the sketchified (and currently visible) drawing.
 			You can store the drawing in a file on your computer or in a Dropbox account.
 		</li>
 	</ul>
@@ -817,6 +821,24 @@
 	<h3>Huidige versie</h3>
 	<dl>
 		<dt>Release-datum</dt>
+		<dd>28 oktober 2016</dd>
+		<dt>Verbeteringen</dt>
+		<dd><ul>
+			<li>Bericht zichtbaar gedurende langlopende operaties.</li>
+			<li>Tekstuele verbeteringen rondom open/opslaan.</li>
+		</ul></dd>
+		<dt>Openstaande punten/wensenlijst</dt>
+		<dd><ul>
+			<li>Toevoegen mogelijkheid om bug direct te melden vanuit Sketchify (inclusief de huidige sketch).</li>
+			<li>Betere ondersteuning voor fonts (dit is vrij lastig platformonafhankelijk te doen).</li>
+			<li>Meer mogelijkheden voor opslaan resultaat (PDF/PNG).</li>
+			<li>Diverse verbeteringen intern.</li>
+			<li><a href=""feedback.html"">Mail je wensen</a></li>
+		</ul></dd>
+	</dl>
+	<h3>Vorige versies</h3>
+	<dl>
+		<dt>Release-datum</dt>
 		<dd>11 april 2016</dd>
 		<dt>Bugfixes</dt>
 		<dd><ul>
@@ -824,20 +846,11 @@
 		</ul></dd>
 		<dt>Uitbreidingen</dt>
 		<dd><ul>
-			<li>Ondersteuning toegevoegd voor importeren en exporteren uit/naar Dropbox.</li>
-			<li>Ondersteuning toegevoegd voor importeren vanaf URL.</li>
+			<li>Ondersteuning toegevoegd voor openen en opslaan uit/in Dropbox.</li>
+			<li>Ondersteuning toegevoegd voor openen vanaf URL.</li>
 			<li>Voorbeeldafbeelding opgenomen voor een snelle start.</li>
 		</ul></dd>
-		<dt>Openstaande punten/wensenlijst</dt>
-		<dd><ul>
-			<li>Toevoegen mogelijkheid om bug direct te melden vanuit Sketchify (inclusief de huidige sketch).</li>
-			<li>Betere ondersteuning voor fonts (dit is vrij lastig platformonafhankelijk te doen).</li>
-			<li>Meer mogelijkheden voor exporteren resultaat (PDF/PNG).</li>
-			<li>Diverse verbeteringen intern.</li>
-			<li><a href=""feedback.html"">Mail je wensen</a></li>
-		</ul></dd>
 	</dl>
-	<h3>Vorige versies</h3>
 	<dl>
 		<dt>Release-datum</dt>
 		<dd>17 februari 2016</dd>
@@ -886,16 +899,11 @@
 	<h3>Current version</h3>
 	<dl>
 		<dt>Release date</dt>
-		<dd>April 11th 2016</dd>
-		<dt>Bugfixes</dt>
+		<dd>October 28th 2016</dd>
+		<dt>Improvements</dt>
 		<dd><ul>
-			<li>Issue in Chrome when &lt;use&gt; tag is used (for example in markers).</li>
-		</ul></dd>
-		<dt>Extensions</dt>
-		<dd><ul>
-			<li>Added support for uploading and downloading of image through Dropbox.</li>
-			<li>Added support for uploading of image through URL.</li>
-			<li>Added example image for a quick start.</li>
+			<li>Show message during long running processes.</li>
+			<li>Textual improvements with respect to open/save.</li>
 		</ul></dd>
 		<dt>Open issues/wishlist</dt>
 		<dd><ul>
@@ -907,6 +915,20 @@
 		</ul></dd>
 	</dl>
 	<h3>Previous versions</h3>
+	<dl>
+		<dt>Release date</dt>
+		<dd>April 11th 2016</dd>
+		<dt>Bugfixes</dt>
+		<dd><ul>
+			<li>Issue in Chrome when &lt;use&gt; tag is used (for example in markers).</li>
+		</ul></dd>
+		<dt>Extensions</dt>
+		<dd><ul>
+			<li>Added support for uploading and downloading of image through Dropbox.</li>
+			<li>Added support for uploading of image through URL.</li>
+			<li>Added example image for a quick start.</li>
+		</ul></dd>
+	</dl>
 	<dl>
 		<dt>Release date</dt>
 		<dd>February 17th 2016</dd>
