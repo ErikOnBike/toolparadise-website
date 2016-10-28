@@ -194,6 +194,59 @@ span.help.dragging {
 	/*pointer-events: none;*/
 }
 
+g.finishedDrawingTrigger {
+	-webkit-animation: finishedDrawing 0.1s linear;
+	-moz-animation: finishedDrawing 0.1s linear;
+	-ms-animation: finishedDrawing 0.1s linear;
+	-o-animation: finishedDrawing 0.1s linear;
+	animation: finishedDrawing 0.1s linear;
+}
+
+@-webkit-keyframes finishedDrawing {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 0.0;
+	}
+}
+
+@-moz-keyframes finishedDrawing {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 0.0;
+	}
+}
+
+@-ms-keyframes finishedDrawing {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 0.0;
+	}
+}
+
+@-o-keyframes finishedDrawing {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 0.0;
+	}
+}
+
+@keyframes finishedDrawing {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 0.0;
+	}
+}
+
 div.slide-pane[data-position=right] {
 	width: 30vw;
 	font-size: 1vw;

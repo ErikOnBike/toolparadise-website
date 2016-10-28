@@ -66,7 +66,8 @@
 		] },
 		{ type: "upload", buttons: [
 			{ id: "close", icon: "close", default: true }
-		] }
+		] },
+		{ type: "progress", buttons: [] }
 	];
 	tp_internals.selectionIcons = {
 		checkbox: { checked: "check_box", unchecked: "check_box_outline_blank" },
@@ -1560,6 +1561,58 @@
 	// Expose controls methods
 	tp.controls = {
 		selectSetOptions: tp_controls_selectSetOptions
+	};
+
+	// Worker methods
+	if(!window.Worker) {
+		window.Worker = function(script) {
+			var self = this;
+			self.onmessage = function(e) {
+				// Empty message (to be replaced by Worker implementation
+			};
+			self.postMessage = function(e) {
+				// Ignore script (implement "js/tp_handler.js" since it is only usage for now)
+				window.setTimeout(function() {
+					d3.json("php/handle.php")
+						.header("Content-Type", "application/json")
+						.post(JSON.stringify(e.request), function(error, data) {
+							self.onmessage({ data: { id: e.id, error: error, data: data } });
+						})
+					;
+				}, 100);
+			};
+		};
+	}
+	tp_internals.worker = new window.Worker("js/tp_handler.js");
+	tp_internals.worker.onmessage = function(e) {
+		if(e && e.data && e.data.id) {
+			var id = e.data.id;
+			var callback = tp_internals.workerCallbacks[id];
+			delete tp_internals.workerCallbacks[id];
+			if(callback) {
+				callback(e.data.error, e.data.data);
+			} else {
+				console.error("Retrieved unbound message from Web Worker");
+			}
+		} else {
+			console.error("Failed to retrieve data from Web Worker");
+		}
+	};
+	tp_internals.workerId = 0;
+	tp_internals.workerCallbacks = {};
+	function tp_worker_send(request, callback) {
+		try {
+			var id = "cb" + tp_internals.workerId++;	// Create new id and increment id after usage
+			tp_internals.workerCallbacks[id] = callback;	// Store callback handling when worker returns
+			tp_internals.worker.postMessage({ id: id, request: request });
+		} catch(ex) {
+			callback({ error: ex, data: null });
+		}
+	}
+
+	// Expose worker methods
+	tp.worker = {
+		send: tp_worker_send
 	};
 
 	// Session methods

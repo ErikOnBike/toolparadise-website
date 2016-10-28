@@ -120,7 +120,8 @@ div.dialog.sign-in,
 div.dialog.change-password,
 div.dialog.user-settings,
 div.dialog.download,
-div.dialog.upload {
+div.dialog.upload,
+div.dialog.progress {
 	background-color: rgba(204, 204, 204, 0.7);
 }
 

@@ -339,6 +339,7 @@ function getSettingsOptions() {
 		options: {
 			"options-tooltips": d3.select("input[name=options-tooltips]").property("value"),
 			"options-preview": d3.select("input[name=options-preview]").property("value"),
+			"options-progress": d3.select("input[name=options-progress]").property("value"),
 			"options-advanced": d3.select("input[name=options-advanced]").property("value")
 		}
 	};
@@ -400,22 +401,20 @@ function updatePreview() {
 		return;
 	}
 
-	d3.json("php/handle.php")
-		.header("Content-Type", "application/json")
-		.post(JSON.stringify({ action: "getSample", properties: getProfileSettings() }), function(error, data) {
-			if(error || !data || data["resultCode"] !== "OK") {
-				console.error("Failed to get sample", error, data);
-			} else {
-				if(data["svg"]) {
-					var svgDoc = (new DOMParser()).parseFromString(data["svg"], "image/svg+xml");
-					if(svgDoc) {
-						state.setProperty("previewSketched", "true");
-						setPreviewImage(svgDoc.documentElement);
-					}
+	// Update sample svg
+	tp.worker.send({ action: "getSample", properties: getProfileSettings() }, function(error, data) {
+		if(error || !data || data["resultCode"] !== "OK") {
+			console.error("Failed to get sample", error, data);
+		} else {
+			if(data["svg"]) {
+				var svgDoc = (new DOMParser()).parseFromString(data["svg"], "image/svg+xml");
+				if(svgDoc) {
+					state.setProperty("previewSketched", "true");
+					setPreviewImage(svgDoc.documentElement);
 				}
 			}
-		})
-	;
+		}
+	});
 }
 
 function updatePreviewDelayed() {
@@ -461,11 +460,13 @@ function updateDrawing(reset) {
 	// Append new SVG
 	d3.xml("/sessions/" + tp.session.getSessionToken() + "/sketchify/sketch.svg?" + Date.now(), function(error, data) {
 		if(error || !data) {
+			stopProgressMessage();
 			console.error("Failed to retrieve data for sketch", error, data);
 			return;
 		}
 
 		// Handle new SVG
+		addFinishedDrawingTrigger(data.documentElement);
 		var svgContent = svgInnerContainer.append(function() { return data.documentElement; });
 		var svgProperties = svgOuterContainer.datum();
 		if(!svgProperties || reset) {
@@ -522,6 +523,22 @@ function updateDrawing(reset) {
 	});
 }
 
+function addFinishedDrawingTrigger(svgDoc) {
+
+	// Trigger is based on animation (animation will start after svg is drawn)
+	// Add g-node with specific class (rest of animation is defined in CSS)
+	var node = d3.select(svgDoc).append("g").attr("class", "finishedDrawingTrigger").node();
+
+	// Register the startanimation event (for the different browser flavours)
+	node.addEventListener("mozAnimationStart", finishedDrawing, false);
+	node.addEventListener("webkitAnimationStart", finishedDrawing, false);
+	node.addEventListener("animationstart", finishedDrawing, false);
+}
+
+function finishedDrawing() {
+	stopProgressMessage();
+}
+
 function removeDrawing() {
 	state.setProperty("imageLoaded", "false");
 	d3.select("#image > svg > g").select("svg").remove();
@@ -540,18 +557,18 @@ function resetSVG() {
 	}
 
 	// Send request to server
-	d3.json("php/handle.php")
-		.header("Content-Type", "application/json")
-		.post(JSON.stringify({ action: "resetSVG", sessionToken: tp.session.getSessionToken() }), function(error, data) {
-			if(error || !data || data["resultCode"] !== "OK") {
-				console.error("Failed to restore original", error, data);
-			} else {
-				state.setProperty("imageSketched", "false");
-				state.setProperty("imageDirty", "false");
-				updateDrawing();
-			}
-		})
-	;
+	startProgressMessage();
+	tp.worker.send({ action: "resetSVG", sessionToken: tp.session.getSessionToken() }, function(error, data) {
+		if(error || !data || data["resultCode"] !== "OK") {
+			console.error("Failed to restore original", error, data);
+			stopProgressMessage();
+			tp.dialogs.showDialog("errorDialog", "#reset-failed");
+		} else {
+			state.setProperty("imageSketched", "false");
+			state.setProperty("imageDirty", "false");
+			updateDrawing();	// Will perform stopProgressMessage after drawing is drawn on screen
+		}
+	});
 }
 
 function sketchSVG() {
@@ -564,20 +581,62 @@ function sketchSVG() {
 		if(state.getProperty("previewSketched") === "false") {
 			updatePreview();
 		}
-		d3.json("php/handle.php")
-			.header("Content-Type", "application/json")
-			.post(JSON.stringify({ action: "sketchSVG", properties: getProfileSettings(), sessionToken: tp.session.getSessionToken() }), function(error, data) {
-				if(error || !data && data["resultCode"] !== "OK") {
-					console.error("Failed to sketch", error, data);
-					tp.dialogs.showDialog("errorDialog", "#sketch-failed");
-				} else {
-					state.setProperty("imageSketched", "true");
-					state.setProperty("imageDirty", "true");
-					updateDrawing();
-				}
-			})
-		;
+		startProgressMessage("#progress-sketch");
+		tp.worker.send({ action: "sketchSVG", properties: getProfileSettings(), sessionToken: tp.session.getSessionToken() }, function(error, data) {
+			if(error || !data && data["resultCode"] !== "OK") {
+				console.error("Failed to sketch", error, data);
+				stopProgressMessage();
+				tp.dialogs.showDialog("errorDialog", "#sketch-failed");
+			} else {
+				state.setProperty("imageSketched", "true");
+				state.setProperty("imageDirty", "true");
+				updateDrawing();	// Will perform stopProgressMessage after drawing is drawn on screen
+			}
+		});
 	});
+}
+
+var progress = {
+	dialog: null,
+	timer: null,
+	MAX_TIMEOUT: 15 * 1000		// 15 seconds
+};
+function startProgressMessage(message) {
+
+	// In case progress message is already present, just reset timer
+	stopProgressTimer();
+
+	// Create dialog (if needed)
+	if(!progress.dialog && !isProgressHidden()) {
+		var dispatcher = tp.dialogs.showDialog("progressDialog", message || "#progress");
+		progress.dialog = dispatcher.target;
+	}
+
+	// Start reset timer (just in case)
+	progress.timer = window.setTimeout(function() {
+		stopProgressMessage();
+	}, progress.MAX_TIMEOUT);
+}
+
+function stopProgressMessage() {
+	stopProgressTimer();
+	var dialog = progress.dialog;
+	if(dialog) {
+		tp.dialogs.closeDialog(dialog);
+		progress.dialog = null;
+	}
+}
+
+function stopProgressTimer() {
+	var timer = progress.timer;
+	if(timer) {
+		progress.timer = null;
+		window.clearTimeout(timer);
+	}
+}
+
+function isProgressHidden() {
+	return d3.select("#global input[name=options-progress]").property("value") === "hide";
 }
 
 // Upload/download SVG
@@ -675,27 +734,26 @@ function uploadLinkWithFileName(url, fileName, successCallback) {
 		window.sessionStorage.setItem("fileName", fileName);
 
 		// Handle upload
-		d3.json("php/handle.php")
-			.header("Content-Type", "application/json")
-			.post(JSON.stringify({ action: "uploadLink", url: url, sessionToken: tp.session.getSessionToken() }), function(error, data) {
-				if(error || !data || data["resultCode"] !== "OK") {
-					console.error("Failed to upload link", error, data);
-					var errorMessages = {
-						"SVG_TOO_BIG": "#upload-too-big",
-						"INVALID_RESOURCE": "#upload-failed-resource"
-					};
-					tp.dialogs.showDialog("errorDialog", errorMessages[data["resultCode"]] || "#upload-failed");
-				} else {
-					state.setProperty("imageSketched", "false");
-					state.setProperty("imageDirty", "false");
-					if(successCallback) {
-						successCallback();
-					}
-					updateDrawing(true);
-					showSVGProcessingWarnings(data);
+		startProgressMessage("#progress-upload");
+		tp.worker.send({ action: "uploadLink", url: url, sessionToken: tp.session.getSessionToken() }, function(error, data) {
+			if(error || !data || data["resultCode"] !== "OK") {
+				console.error("Failed to upload link", error, data);
+				stopProgressMessage();
+				var errorMessages = {
+					"SVG_TOO_BIG": "#upload-too-big",
+					"INVALID_RESOURCE": "#upload-failed-resource"
+				};
+				tp.dialogs.showDialog("errorDialog", errorMessages[data["resultCode"]] || "#upload-failed");
+			} else {
+				state.setProperty("imageSketched", "false");
+				state.setProperty("imageDirty", "false");
+				if(successCallback) {
+					successCallback();
 				}
-			})
-		;
+				updateDrawing(true);	// Will perform stopProgressMessage after drawing is drawn on screen
+				showSVGProcessingWarnings(data);
+			}
+		});
 	});
 }
 
@@ -740,23 +798,22 @@ function uploadSVG(svgString, fileName, successCallback) {
 		window.sessionStorage.setItem("fileName", fileName);
 
 		// Handle upload
-		d3.json("php/handle.php")
-			.header("Content-Type", "application/json")
-			.post(JSON.stringify({ action: "uploadSVG", svg: svgString, sessionToken: tp.session.getSessionToken() }), function(error, data) {
-				if(error || !data || data["resultCode"] !== "OK") {
-					console.error("Failed to upload", error, data);
-					tp.dialogs.showDialog("errorDialog", data["resultCode"] === "SVG_TOO_BIG" ? "#upload-too-big" : "#upload-failed");
-				} else {
-					state.setProperty("imageSketched", "false");
-					state.setProperty("imageDirty", "false");
-					if(successCallback) {
-						successCallback();
-					}
-					updateDrawing(true);
-					showSVGProcessingWarnings(data);
+		startProgressMessage("#progress-upload");
+		tp.worker.send({ action: "uploadSVG", svg: svgString, sessionToken: tp.session.getSessionToken() }, function(error, data) {
+			if(error || !data || data["resultCode"] !== "OK") {
+				console.error("Failed to upload", error, data);
+				stopProgressMessage();
+				tp.dialogs.showDialog("errorDialog", data["resultCode"] === "SVG_TOO_BIG" ? "#upload-too-big" : "#upload-failed");
+			} else {
+				state.setProperty("imageSketched", "false");
+				state.setProperty("imageDirty", "false");
+				if(successCallback) {
+					successCallback();
 				}
-			})
-		;
+				updateDrawing(true);	// Will perform stopProgressMessage after drawing is drawn on screen
+				showSVGProcessingWarnings(data);
+			}
+		});
 	});
 }
 
@@ -1534,7 +1591,8 @@ function initApplication() {
 					updateStateForNewSession();
 					showUploadDialog();
 				} else {
-					updateDrawing();
+					startProgressMessage();
+					updateDrawing();	// Will perform stopProgressMessage after drawing is drawn on screen
 				}
 			});
 		}
