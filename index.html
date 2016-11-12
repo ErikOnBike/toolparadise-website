@@ -1,7 +1,8 @@
 <html>
 <body>
 <script>
-window.location.href = "/home.html" + window.location.search;
+var oldLocation = window.location;
+window.location.href = oldLocation.protocol + "//" + oldLocation.host + "/home.html" + oldLocation.search;
 </script>
 </body>
 </html>

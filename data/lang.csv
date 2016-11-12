@@ -201,16 +201,13 @@
 "
 "try-sketchify","Ga naar Sketchify en probeer het zelf!","Go to Sketchify and try it yourself!"
 "privacy-statement","
-	<h3>LET OP! Nog geen SSL</h3>
+	<h3>LET OP! SSL experimenteel (via Let's Encrypt)</h3>
 	<p>
 		<strong>Gebruik geen wachtwoorden op deze site die u ook elders gebruikt!</strong>
 	</p>
 	<p>
-		Op dit moment is er nog geen werkend SSL-certificaat beschikbaar voor de tool paradise site.
-		Dit betekent dat informatie die wordt uitgewisseld tussen uw browser en de webserver onversleuteld wordt verzonden.
-		Mocht u zich op een onvertrouwd netwerk bevinden (bedraad of draadloos), gebruik dan geen vertrouwelijke informatie bij één van onze diensten.
-		Als u besluit zich wel aan te melden, vervang dan zodra u op een vertrouwd netwerk bent uw wachtwoord.
-		Dit kan ook via de optie 'Wachtwoord vergeten' op het aanmeldscherm.
+		Op dit moment wordt een SSL-certificaat gebruikt via de Let's Encrypt CA (zie https://letsencrypt.org).
+		Dit wordt geleverd via een beta-programma van de hosting-provider en kan daarom aan wijzigingen onderhevig zijn.
 	</p>
 	<h3>Ons beleid</h3>
 	<p>
@@ -276,16 +273,13 @@
 	<p></p>
 	<a href=""javascript:history.back()"">Terug</a>
 ","
-	<h3>BE AWARE! No SSL yet</h3>
+	<h3>BE AWARE! Experimental SSL support (via Let's Encrypt)</h3>
 	<p>
 		<strong>Please do not use a password on this site which you use on other sites as well!</strong>
 	</p>
 	<p>
-		At this moment there is no working SSL certificate available for the tool paradise site.
-		This means that information which is exchanged between your browser and the webserver will be sent unencrypted.
-		If you are connected to an untrusted network (wired or wireless) please do not use any confidential informatie at one of our services.
-		If you do decide to sign in please replace your password afterwards as soon as you are connected to a trusted network.
-		Changing your password can also be done through the option 'Password forgotten' on the sign in dialog.
+		At this moment a SSL certificate is being used from the Let's Encrypt CA (see https://letsencrypt.org).
+		This is provided through a beta program of the hosting provider and can therefore be subject to change.
 	</p>
 	<h3>Our policy</h3>
 	<p>
